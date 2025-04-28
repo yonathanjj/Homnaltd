@@ -1,4 +1,3 @@
-        // Sample data structure for partners, solutions, and products
         const partnersData = {
             sika: {
                 name: "Sika",
