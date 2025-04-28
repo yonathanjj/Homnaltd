@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Solutions Partners</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner h1 {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            color: white;
+            background: rgba(46, 54, 143, 0.8);
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 2.5rem;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            color: #2E368F;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Partners Grid */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .partner-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .partner-logo {
+            height: 100px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+
+        .partner-card h3 {
+            color: #2E368F;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .partner-description {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .view-solutions-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2E368F;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .view-solutions-btn:hover {
+            background: #1a2163;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: white;
+            margin: 50px auto;
+            max-width: 900px;
+            width: 90%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal-header {
+            padding: 20px;
+            background: #2E368F;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        /* Solutions Modal */
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .solution-card {
+            background: #f8f9ff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .solution-card:hover {
+            background: #e6e9ff;
+            transform: translateY(-3px);
+        }
+
+        .solution-icon {
+            font-size: 2.5rem;
+            color: #2E368F;
+            margin-bottom: 15px;
+        }
+
+        .solution-card h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .solution-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Products Modal */
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .back-to-solutions {
+            color: #2E368F;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            height: 150px;
+            background: #f8f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h5 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .view-product-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #2E368F;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .view-product-btn:hover {
+            background: #1a2163;
+        }
+
+        /* Product Detail Modal */
+        .product-detail {
+            display: flex;
+            gap: 30px;
+        }
+
+        .product-gallery {
+            flex: 1;
+        }
+
+        .product-main-image {
+            width: 100%;
+            height: 300px;
+            background: #f8f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .product-main-image img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+
+        .product-thumbnail {
+            width: 70px;
+            height: 70px;
+            background: #f8f9ff;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            overflow: hidden;
+        }
+
+        .product-thumbnail.active {
+            border-color: #2E368F;
+        }
+
+        .product-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-details h4 {
+            color: #2E368F;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-meta {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .product-description {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .product-features h5 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-features ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .product-features li {
+            margin-bottom: 8px;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .primary-btn {
+            background: #2E368F;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #1a2163;
+        }
+
+        .secondary-btn {
+            background: white;
+            color: #2E368F;
+            border: 1px solid #2E368F;
+        }
+
+        .secondary-btn:hover {
+            background: #f0f2ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .banner h1 {
+                left: 20px;
+                bottom: 20px;
+                font-size: 2rem;
+            }
+
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .product-detail {
+                flex-direction: column;
+            }
+
+            .product-main-image {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                height: 300px;
+            }
+
+            .banner h1 {
+                font-size: 1.5rem;
+                left: 10px;
+                bottom: 10px;
+                padding: 10px 15px;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .product-actions {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Banner Section -->
+<section class="banner">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Construction Site">
+    <h1>Partner Solutions</h1>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Section Header -->
+    <div class="section-header">
+        <h2>Our Trusted Partners</h2>
+        <p>Select a partner to explore their construction solutions and products</p>
+    </div>
+
+    <!-- Partners Grid -->
+    <div class="partners-grid">
+        <!-- Sika Partner Card -->
+        <div class="partner-card" data-partner="sika">
+            <img src="https://www.sika.com/content/dam/dms/sika/images-3/logo/sika-logo.png" alt="Sika Logo" class="partner-logo">
+            <h3>Sika</h3>
+            <p class="partner-description">World leader in construction chemicals and industrial manufacturing.</p>
+            <a href="#" class="view-solutions-btn" data-partner="sika">View Solutions</a>
+        </div>
+
+        <!-- Simba Partner Card -->
+        <div class="partner-card" data-partner="simba">
+            <img src="https://via.placeholder.com/200x80?text=Simba+Logo" alt="Simba Logo" class="partner-logo">
+            <h3>Simba</h3>
+            <p class="partner-description">Innovative building materials and construction solutions provider.</p>
+            <a href="#" class="view-solutions-btn" data-partner="simba">View Solutions</a>
+        </div>
+
+        <!-- ACO Partner Card -->
+        <div class="partner-card" data-partner="aco">
+            <img src="https://www.aco.com/fileadmin/template/images/aco-logo.svg" alt="ACO Logo" class="partner-logo">
+            <h3>ACO</h3>
+            <p class="partner-description">Specialists in drainage and water management solutions.</p>
+            <a href="#" class="view-solutions-btn" data-partner="aco">View Solutions</a>
+        </div>
+    </div>
+</div>
+
+<!-- Solutions Modal -->
+<div class="modal" id="solutions-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="solutions-modal-title">Solutions</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body" id="solutions-modal-content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+</div>
+
+<!-- Products Modal -->
+<div class="modal" id="products-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="products-modal-title">Products</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body" id="products-modal-content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Modal -->
+<div class="modal" id="product-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="product-modal-title">Product Details</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body" id="product-modal-content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+</div>
+
+<script>
+    // Sample data structure for partners, solutions, and products
+    const partnersData = {
+        sika: {
+            name: "Sika",
+            description: "World leader in construction chemicals and industrial manufacturing.",
+            logo: "https://www.sika.com/content/dam/dms/sika/images-3/logo/sika-logo.png",
+            solutions: {
+                waterproofing: {
+                    name: "Waterproofing Solutions",
+                    icon: "fa-water",
+                    description: "Comprehensive waterproofing systems for all construction needs",
+                    products: {
+                        "sika-proof-membrane": {
+                            name: "SikaProof® Membrane",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sika_proof_membrane_-a.png",
+                                "https://www.sika.com/content/dam/dms/si01/sika_proof_membrane_-b.png"
+                            ],
+                            description: "SikaProof® is a fully bonded, dual-side coated, reinforced waterproofing membrane with a non-woven fleece on both sides.",
+                            features: [
+                                "Fully bonded waterproofing system",
+                                "Dual protection with coating on both sides",
+                                "High puncture resistance",
+                                "Excellent crack bridging capability"
+                            ]
+                        },
+                        "sika-igolflex": {
+                            name: "Sika® Igolflex",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikalastic_-igolflex.png"
+                            ],
+                            description: "Sika® Igolflex is a high-performance, elastic, one-component polyurethane waterproofing membrane.",
+                            features: [
+                                "Excellent UV resistance",
+                                "Highly elastic and durable",
+                                "Seamless application",
+                                "Suitable for foot traffic"
+                            ]
+                        },
+                        "sika-trocal": {
+                            name: "Sika®-Trocal",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sika_-trocal.png"
+                            ],
+                            description: "High-quality waterproofing membrane for roofs and terraces.",
+                            features: [
+                                "Weather resistant",
+                                "Easy to install",
+                                "Long lifespan",
+                                "Various color options"
+                            ]
+                        }
+                    }
+                },
+                concrete: {
+                    name: "Concrete Solutions",
+                    icon: "fa-cubes",
+                    description: "Innovative products for concrete construction and repair",
+                    products: {
+                        "sika-visco-crete": {
+                            name: "Sika® ViscoCrete",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sika_visco_crete.png"
+                            ],
+                            description: "Superplasticizer for high-performance concrete.",
+                            features: [
+                                "High water reduction",
+                                "Excellent workability",
+                                "Improved strength development",
+                                "Reduced shrinkage"
+                            ]
+                        },
+                        "sika-fiber": {
+                            name: "SikaFiber®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikafiber.png"
+                            ],
+                            description: "Structural synthetic fibers for concrete reinforcement.",
+                            features: [
+                                "Reduces plastic shrinkage cracking",
+                                "Improves impact resistance",
+                                "Easy to dose and mix",
+                                "Corrosion-free solution"
+                            ]
+                        },
+                        "sika-antisol": {
+                            name: "Sika® Antisol",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sika_antisol.png"
+                            ],
+                            description: "Evaporation retarder for fresh concrete.",
+                            features: [
+                                "Reduces plastic shrinkage",
+                                "Prevents crust formation",
+                                "Easy to apply",
+                                "Does not affect setting time"
+                            ]
+                        }
+                    }
+                },
+                flooring: {
+                    name: "Flooring Systems",
+                    icon: "fa-layer-group",
+                    description: "Durable and aesthetic flooring solutions for all environments",
+                    products: {
+                        "sika-floor": {
+                            name: "Sikafloor®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikafloor.png"
+                            ],
+                            description: "High-performance flooring systems for industrial and commercial use.",
+                            features: [
+                                "Excellent abrasion resistance",
+                                "Chemical resistant",
+                                "Seamless application",
+                                "Various finishes available"
+                            ]
+                        },
+                        "sika-gard": {
+                            name: "Sikagard®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikagard.png"
+                            ],
+                            description: "Protective coatings for floors and walls.",
+                            features: [
+                                "Easy to clean surface",
+                                "Resistant to chemicals",
+                                "Decorative options",
+                                "Durable finish"
+                            ]
+                        },
+                        "sika-level-125": {
+                            name: "Sika® Level-125",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sika_level_125.png"
+                            ],
+                            description: "Self-leveling underlayment for floor coverings.",
+                            features: [
+                                "Fast curing",
+                                "Excellent flow properties",
+                                "Smooth finish",
+                                "High compressive strength"
+                            ]
+                        }
+                    }
+                },
+                // Additional solutions would be added here...
+                sealants: {
+                    name: "Sealants & Adhesives",
+                    icon: "fa-tape",
+                    description: "High-performance sealing and bonding solutions",
+                    products: {
+                        "sika-flex": {
+                            name: "SikaFlex®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikaflex.png"
+                            ],
+                            description: "Premium polyurethane sealant for construction and industry.",
+                            features: [
+                                "Excellent adhesion",
+                                "Highly elastic",
+                                "Weather resistant",
+                                "Paintable"
+                            ]
+                        },
+                        "sika-bond": {
+                            name: "SikaBond®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikabond.png"
+                            ],
+                            description: "Construction adhesives for various substrates.",
+                            features: [
+                                "Strong bonding",
+                                "Versatile applications",
+                                "Easy to apply",
+                                "Durable results"
+                            ]
+                        }
+                    }
+                },
+                repair: {
+                    name: "Repair & Protection",
+                    icon: "fa-tools",
+                    description: "Solutions for concrete repair and structural protection",
+                    products: {
+                        "sika-monotop": {
+                            name: "SikaMonotop®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikamonotop.png"
+                            ],
+                            description: "Repair mortars for concrete structures.",
+                            features: [
+                                "High strength",
+                                "Excellent adhesion",
+                                "Rapid hardening",
+                                "Durable repair"
+                            ]
+                        },
+                        "sika-ferroguard": {
+                            name: "SikaFerroguard®",
+                            images: [
+                                "https://www.sika.com/content/dam/dms/si01/sikaferroguard.png"
+                            ],
+                            description: "Corrosion inhibitor for reinforced concrete.",
+                            features: [
+                                "Penetrates concrete",
+                                "Protects reinforcement",
+                                "Easy application",
+                                "Long-term protection"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        simba: {
+            name: "Simba",
+            description: "Innovative building materials and construction solutions provider.",
+            logo: "https://via.placeholder.com/200x80?text=Simba+Logo",
+            solutions: {
+                masonry: {
+                    name: "Masonry Products",
+                    icon: "fa-cube",
+                    description: "High-quality masonry units for all construction needs",
+                    products: {
+                        "simba-blocks": {
+                            name: "Simba Blocks",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=Simba+Blocks"
+                            ],
+                            description: "Premium concrete blocks for durable construction.",
+                            features: [
+                                "Various sizes available",
+                                "High compressive strength",
+                                "Thermal insulation",
+                                "Fire resistant"
+                            ]
+                        },
+                        "simba-bricks": {
+                            name: "Simba Bricks",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=Simba+Bricks"
+                            ],
+                            description: "Clay bricks with excellent durability.",
+                            features: [
+                                "Natural clay material",
+                                "Weather resistant",
+                                "Aesthetic appeal",
+                                "Long lifespan"
+                            ]
+                        },
+                        "simba-pavers": {
+                            name: "Simba Pavers",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=Simba+Pavers"
+                            ],
+                            description: "Interlocking pavers for hard landscaping.",
+                            features: [
+                                "Durable surface",
+                                "Variety of colors",
+                                "Easy installation",
+                                "Permeable options"
+                            ]
+                        }
+                    }
+                },
+                roofing: {
+                    name: "Roofing Systems",
+                    icon: "fa-home",
+                    description: "Complete roofing solutions for all building types",
+                    products: {
+                        "simba-tile": {
+                            name: "SimbaTile",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=SimbaTile"
+                            ],
+                            description: "Concrete roofing tiles for durable protection.",
+                            features: [
+                                "Weather resistant",
+                                "Various profiles",
+                                "Color options",
+                                "Long warranty"
+                            ]
+                        },
+                        "simba-shingle": {
+                            name: "SimbaShingle",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=SimbaShingle"
+                            ],
+                            description: "Asphalt shingles for cost-effective roofing.",
+                            features: [
+                                "Easy installation",
+                                "Wind resistant",
+                                "Decorative options",
+                                "Affordable"
+                            ]
+                        },
+                        "simba-metal": {
+                            name: "SimbaMetal",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=SimbaMetal"
+                            ],
+                            description: "Metal roofing panels for modern buildings.",
+                            features: [
+                                "Lightweight",
+                                "Durable",
+                                "Energy efficient",
+                                "Sleek appearance"
+                            ]
+                        }
+                    }
+                },
+                structural: {
+                    name: "Structural Solutions",
+                    icon: "fa-building",
+                    description: "Engineered components for structural applications",
+                    products: {
+                        "simba-beam": {
+                            name: "SimbaBeam",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=SimbaBeam"
+                            ],
+                            description: "Precast concrete beams for structural framing.",
+                            features: [
+                                "High load capacity",
+                                "Precision engineered",
+                                "Fast installation",
+                                "Consistent quality"
+                            ]
+                        },
+                        "simba-column": {
+                            name: "SimbaColumn",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=SimbaColumn"
+                            ],
+                            description: "Structural columns for vertical support.",
+                            features: [
+                                "Various sizes",
+                                "Reinforced options",
+                                "Architectural finishes",
+                                "Durable"
+                            ]
+                        },
+                        "simba-panel": {
+                            name: "SimbaPanel",
+                            images: [
+                                "https://via.placeholder.com/600x400?text=SimbaPanel"
+                            ],
+                            description: "Prefabricated wall panels for rapid construction.",
+                            features: [
+                                "Fast installation",
+                                "Integrated insulation",
+                                "Finish options",
+                                "Structural integrity"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        aco: {
+            name: "ACO",
+            description: "Specialists in drainage and water management solutions.",
+            logo: "https://www.aco.com/fileadmin/template/images/aco-logo.svg",
+            solutions: {
+                drainage: {
+                    name: "Drainage Systems",
+                    icon: "fa-tint",
+                    description: "Comprehensive drainage solutions for all applications",
+                    products: {
+                        "aco-drain": {
+                            name: "ACO Drain",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/6/7/csm_aco-drain_1e8b0c1f1c.png"
+                            ],
+                            description: "Channel drainage system for surface water management.",
+                            features: [
+                                "High load capacity",
+                                "Modular design",
+                                "Easy installation",
+                                "Durable materials"
+                            ]
+                        },
+                        "aco-multidrain": {
+                            name: "ACO MultiDrain",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/0/1/csm_aco-multidrain_0b6e3a1c4e.png"
+                            ],
+                            description: "Multi-purpose drainage system for various applications.",
+                            features: [
+                                "Versatile applications",
+                                "Customizable lengths",
+                                "Various grating options",
+                                "Corrosion resistant"
+                            ]
+                        },
+                        "aco-hexadrain": {
+                            name: "ACO HexaDrain",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/3/0/csm_aco-hexadrain_5c8a0a4a4c.png"
+                            ],
+                            description: "Hexagonal drainage system for heavy-duty applications.",
+                            features: [
+                                "Exceptional load capacity",
+                                "Unique hexagonal design",
+                                "Easy maintenance",
+                                "Long lifespan"
+                            ]
+                        }
+                    }
+                },
+                water: {
+                    name: "Water Management",
+                    icon: "fa-water",
+                    description: "Systems for sustainable water management",
+                    products: {
+                        "aco-stormbrixx": {
+                            name: "ACO StormBrixx",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/3/0/csm_aco-stormbrixx_8e1e5c1d9b.png"
+                            ],
+                            description: "Modular stormwater management system.",
+                            features: [
+                                "High storage capacity",
+                                "Easy installation",
+                                "Lightweight modules",
+                                "Sustainable solution"
+                            ]
+                        },
+                        "aco-qmax": {
+                            name: "ACO Qmax",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/4/8/csm_aco-qmax_1c3c7f4c5d.png"
+                            ],
+                            description: "High-capacity drainage channel system.",
+                            features: [
+                                "Maximum flow rate",
+                                "Heavy-duty construction",
+                                "Various configurations",
+                                "Durable materials"
+                            ]
+                        },
+                        "aco-kerbdrain": {
+                            name: "ACO KerbDrain",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/3/0/csm_aco-kerbdrain_8d3b3c1e5e.png"
+                            ],
+                            description: "Combined kerb and drainage system.",
+                            features: [
+                                "Space-saving design",
+                                "Aesthetic appeal",
+                                "Functional solution",
+                                "Easy installation"
+                            ]
+                        }
+                    }
+                },
+                access: {
+                    name: "Access Covers",
+                    icon: "fa-door-open",
+                    description: "Durable and secure access solutions",
+                    products: {
+                        "aco-procover": {
+                            name: "ACO ProCover",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/3/0/csm_aco-procover_8d3b3c1e5e.png"
+                            ],
+                            description: "Professional access covers for drainage systems.",
+                            features: [
+                                "Heavy-duty construction",
+                                "Secure locking",
+                                "Various load ratings",
+                                "Durable materials"
+                            ]
+                        },
+                        "aco-slimline": {
+                            name: "ACO SlimLine",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/3/0/csm_aco-slimline_8d3b3c1e5e.png"
+                            ],
+                            description: "Slim profile access covers for discreet installations.",
+                            features: [
+                                "Low-profile design",
+                                "Aesthetic options",
+                                "Functional access",
+                                "Durable construction"
+                            ]
+                        },
+                        "aco-heavyduty": {
+                            name: "ACO Heavy Duty",
+                            images: [
+                                "https://www.aco.com/fileadmin/_processed_/3/0/csm_aco-heavyduty_8d3b3c1e5e.png"
+                            ],
+                            description: "Heavy-duty access covers for demanding applications.",
+                            features: [
+                                "Exceptional load capacity",
+                                "Secure locking",
+                                "Durable materials",
+                                "Long lifespan"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    };
+
+    // DOM Ready
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get modal elements
+        const solutionsModal = document.getElementById('solutions-modal');
+        const productsModal = document.getElementById('products-modal');
+        const productModal = document.getElementById('product-modal');
+
+        // Get content containers
+        const solutionsModalContent = document.getElementById('solutions-modal-content');
+        const productsModalContent = document.getElementById('products-modal-content');
+        const productModalContent = document.getElementById('product-modal-content');
+
+        // Get title elements
+        const solutionsModalTitle = document.getElementById('solutions-modal-title');
+        const productsModalTitle = document.getElementById('products-modal-title');
+        const productModalTitle = document.getElementById('product-modal-title');
+
+        // Close buttons
+        const closeButtons = document.querySelectorAll('.close-modal');
+
+        // View solutions buttons
+        const viewSolutionsBtns = document.querySelectorAll('.view-solutions-btn');
+
+        // Current state variables
+        let currentPartner = null;
+        let currentSolution = null;
+
+        // Close modal function
+        function closeAllModals() {
+            solutionsModal.style.display = 'none';
+            productsModal.style.display = 'none';
+            productModal.style.display = 'none';
+        }
+
+        // Add click event to close buttons
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', closeAllModals);
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === solutionsModal || e.target === productsModal || e.target === productModal) {
+                closeAllModals();
+            }
+        });
+
+        // View solutions button click
+        viewSolutionsBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const partnerId = this.getAttribute('data-partner');
+                currentPartner = partnerId;
+
+                // Load solutions for this partner
+                loadSolutionsModal(partnerId);
+            });
+        });
+
+        // Load solutions modal
+        function loadSolutionsModal(partnerId) {
+            const partner = partnersData[partnerId];
+
+            if (!partner) return;
+
+            // Set modal title
+            solutionsModalTitle.textContent = `${partner.name} Solutions`;
+
+            // Build solutions grid
+            let html = '<div class="solutions-grid">';
+
+            for (const [solutionId, solution] of Object.entries(partner.solutions)) {
+                html += `
+                    <div class="solution-card" data-solution="${solutionId}">
+                        <div class="solution-icon">
+                            <i class="fas ${solution.icon}"></i>
+                        </div>
+                        <h4>${solution.name}</h4>
+                        <p>${solution.description}</p>
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+            solutionsModalContent.innerHTML = html;
+
+            // Show modal
+            solutionsModal.style.display = 'block';
+
+            // Add click event to solution cards
+            const solutionCards = document.querySelectorAll('.solution-card');
+            solutionCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const solutionId = this.getAttribute('data-solution');
+                    currentSolution = solutionId;
+                    loadProductsModal(partnerId, solutionId);
+                });
+            });
+        }
+
+        // Load products modal
+        function loadProductsModal(partnerId, solutionId) {
+            const partner = partnersData[partnerId];
+            const solution = partner.solutions[solutionId];
+
+            if (!partner || !solution) return;
+
+            // Set modal title
+            productsModalTitle.textContent = `${partner.name} - ${solution.name}`;
+
+            // Build products grid
+            let html = `
+                <div class="products-header">
+                    <a href="#" class="back-to-solutions"><i class="fas fa-arrow-left"></i> Back to Solutions</a>
+                    <span>${Object.keys(solution.products).length} Products</span>
+                </div>
+                <div class="products-grid">
+            `;
+
+            for (const [productId, product] of Object.entries(solution.products)) {
+                html += `
+                    <div class="product-card" data-product="${productId}">
+                        <div class="product-image">
+                            <img src="${product.images[0]}" alt="${product.name}">
+                        </div>
+                        <div class="product-info">
+                            <h5>${product.name}</h5>
+                            <a href="#" class="view-product-btn" data-product="${productId}">View Product</a>
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+            productsModalContent.innerHTML = html;
+
+            // Close solutions modal and open products modal
+            solutionsModal.style.display = 'none';
+            productsModal.style.display = 'block';
+
+            // Add click event to back button
+            const backBtn = document.querySelector('.back-to-solutions');
+            backBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                productsModal.style.display = 'none';
+                solutionsModal.style.display = 'block';
+            });
+
+            // Add click event to product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Prevent triggering when clicking on the view button
+                    if (!e.target.classList.contains('view-product-btn')) {
+                        const productId = this.getAttribute('data-product');
+                        loadProductModal(partnerId, solutionId, productId);
+                    }
+                });
+            });
+
+            // Add click event to view product buttons
+            const viewProductBtns = document.querySelectorAll('.view-product-btn');
+            viewProductBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const productId = this.getAttribute('data-product');
+                    loadProductModal(partnerId, solutionId, productId);
+                });
+            });
+        }
+
+        // Load product detail modal
+        function loadProductModal(partnerId, solutionId, productId) {
+            const partner = partnersData[partnerId];
+            const solution = partner.solutions[solutionId];
+            const product = solution.products[productId];
+
+            if (!partner || !solution || !product) return;
+
+            // Set modal title
+            productModalTitle.textContent = product.name;
+
+            // Build product detail
+            let html = `
+                <div class="product-detail">
+                    <div class="product-gallery">
+                        <div class="product-main-image">
+                            <img src="${product.images[0]}" alt="${product.name}">
+                        </div>
+                        <div class="product-thumbnails">
+            `;
+
+            // Add thumbnails
+            product.images.forEach((img, index) => {
+                html += `
+                    <div class="product-thumbnail ${index === 0 ? 'active' : ''}" data-img="${img}">
+                        <img src="${img}" alt="${product.name}">
+                    </div>
+                `;
+            });
+
+            html += `
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>${product.name}</h4>
+                        <div class="product-meta">
+                            <span><strong>Partner:</strong> ${partner.name}</span> |
+                            <span><strong>Category:</strong> ${solution.name}</span>
+                        </div>
+                        <div class="product-description">
+                            <p>${product.description}</p>
+                        </div>
+                        <div class="product-features">
+                            <h5>Key Features:</h5>
+                            <ul>
+            `;
+
+            // Add features
+            product.features.forEach(feature => {
+                html += `<li>${feature}</li>`;
+            });
+
+            html += `
+                            </ul>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn primary-btn">Request Quote</button>
+                            <button class="action-btn secondary-btn">Download Spec Sheet</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            productModalContent.innerHTML = html;
+
+            // Close products modal and open product modal
+            productsModal.style.display = 'none';
+            productModal.style.display = 'block';
+
+            // Add click event to thumbnails
+            const thumbnails = document.querySelectorAll('.product-thumbnail');
+            const mainImage = document.querySelector('.product-main-image img');
+
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    // Update main image
+                    const imgSrc = this.getAttribute('data-img');
+                    mainImage.src = imgSrc;
+
+                    // Update active thumbnail
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>

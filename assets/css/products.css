@@ -1,0 +1,171 @@
+.main-section {
+    background: #f8f4ff;
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    color: #2E368F;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-subtitle {
+    color: #555;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.brand-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.brand-tab {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.brand-tab:hover {
+    border-color: #2E368F;
+}
+
+.brand-tab.active {
+    border-color: #2E368F;
+    background: #2E368F;
+}
+
+.brand-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.products-container {
+    margin: 2rem 0;
+}
+
+.brand-products {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.brand-products.active {
+    display: grid;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-name {
+    color: #2E368F;
+    padding: 0 1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.product-desc {
+    color: #666;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.product-btn {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem;
+    padding: 0.8rem;
+    background: #2E368F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-btn:hover {
+    background: #1a236e;
+}
+
+.cta-section {
+    background: #2E368F;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-title {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    color: #f8f4ff;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background: white;
+    color: #2E368F;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #f8f4ff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .brand-tabs {
+        gap: 0.5rem;
+    }
+
+    .brand-logo {
+        height: 30px;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+}
