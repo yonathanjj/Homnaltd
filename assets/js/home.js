@@ -17,47 +17,135 @@ window.onload = function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const additionalCards = document.querySelectorAll('.additional-card');
-  const moreButton = document.getElementById('more-button');
+  // Initialize carousel
+  const carousel = document.querySelector('.carousel');
+  const track = document.querySelector('.carousel-track');
+  const cards = document.querySelectorAll('.product-card');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const dotsContainer = document.querySelector('.carousel-dots');
 
-  // Function to toggle additional cards
-  function toggleAdditionalCards() {
-    additionalCards.forEach(card => {
-      card.classList.toggle('show');
-    });
+  const cardWidth = cards[0].offsetWidth + 25; // width + gap
+  let currentPosition = 0;
+  let maxPosition = track.scrollWidth - carousel.offsetWidth;
+  let visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
 
-    // Update button text
-    if (moreButton.textContent === 'Show More') {
-      moreButton.textContent = 'Show Less';
-    } else {
-      moreButton.textContent = 'Show More';
+  // Create dots
+  function createDots() {
+    dotsContainer.innerHTML = '';
+    const dotCount = Math.ceil(track.scrollWidth / carousel.offsetWidth);
+
+    for (let i = 0; i < dotCount; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('carousel-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        currentPosition = i * carousel.offsetWidth;
+        track.style.transform = `translateX(-${currentPosition}px)`;
+        updateDots();
+        updateButtons();
+      });
+      dotsContainer.appendChild(dot);
     }
   }
 
-  // Add event listener to the "More" button
-  moreButton.addEventListener('click', toggleAdditionalCards);
+  // Update active dot
+  function updateDots() {
+    const dots = document.querySelectorAll('.carousel-dot');
+    const activeDotIndex = Math.round(currentPosition / carousel.offsetWidth);
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === activeDotIndex);
+    });
+  }
+
+  // Function to update button states
+  function updateButtons() {
+    prevButton.disabled = currentPosition === 0;
+    nextButton.disabled = currentPosition >= maxPosition - 10; // small buffer for rounding
+  }
+
+  // Function to move carousel
+  function moveCarousel(amount) {
+    currentPosition += amount;
+
+    // Ensure we don't scroll past the beginning or end
+    currentPosition = Math.max(0, Math.min(currentPosition, maxPosition));
+
+    track.style.transform = `translateX(-${currentPosition}px)`;
+    updateButtons();
+    updateDots();
+  }
+
+  // Button event listeners
+  prevButton.addEventListener('click', () => {
+    moveCarousel(-cardWidth * visibleCards);
+  });
+
+  nextButton.addEventListener('click', () => {
+    moveCarousel(cardWidth * visibleCards);
+  });
+
+  // Touch and drag functionality
+  let isDragging = false;
+  let startX, startScrollLeft;
+
+  track.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX;
+    startScrollLeft = currentPosition;
+    carousel.style.cursor = 'grabbing';
+    carousel.style.userSelect = 'none';
+  });
+
+  track.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const x = e.pageX;
+    const walk = (x - startX) * 2; // Multiply for faster dragging
+    currentPosition = startScrollLeft - walk;
+    track.style.transform = `translateX(-${currentPosition}px)`;
+    updateButtons();
+    updateDots();
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    carousel.style.cursor = 'grab';
+    carousel.style.userSelect = '';
+  });
+
+  // Initialize dots and buttons
+  createDots();
+  updateButtons();
 
   // Trigger animations when the section is in view
-  const expertiseSection = document.querySelector('.expertise-section');
-  const expertiseCards = document.querySelectorAll('.expertise-card');
+  const productsSection = document.querySelector('.products-section');
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          expertiseCards.forEach((card, index) => {
+          cards.forEach((card, index) => {
             setTimeout(() => {
               card.classList.add('animate');
-            }, index * 200); // Stagger delay (200ms per card)
+            }, index * 100);
           });
-          observer.unobserve(entry.target); // Stop observing after animation
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.5 } // Trigger when 50% of the section is visible
+    { threshold: 0.2 }
   );
 
-  observer.observe(expertiseSection);
+  observer.observe(productsSection);
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    maxPosition = track.scrollWidth - carousel.offsetWidth;
+    visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+    updateButtons();
+    updateDots();
+  });
 });
 
 
