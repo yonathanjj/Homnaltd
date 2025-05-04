@@ -23,14 +23,14 @@
     <div class="footer-line glow-line"></div>
 
     <div class="footer-bottom">
-        <div class="footer-bottom-links">
-            <a href="commitment.html" class="link-underline">Commitment</a>
-            <a href="privacy.html" class="link-underline">Privacy</a>
-            <a href="legal.html" class="link-underline">Legal</a>
-            <a href="suppliers.html" class="link-underline">Suppliers</a>
-            <a href="cookie.html" class="link-underline">Cookies</a>
-        </div>
+    <div class="footer-bottom-links">
+        <button onclick="window.location.href='commitment.html'" class="link-underline">Commitment</button>
+        <button onclick="window.location.href='privacy.html'" class="link-underline">Privacy</button>
+        <button onclick="window.location.href='legal.html'" class="link-underline">Legal</button>
+        <button onclick="window.location.href='suppliers.html'" class="link-underline">Suppliers</button>
+        <button onclick="window.location.href='cookie.html'" class="link-underline">Cookies</button>
     </div>
+</div>
 
     <div class="footer-line glow-line"></div>
 
@@ -147,9 +147,42 @@
     margin-bottom: 15px;
 }
 
-.footer-bottom-links a {
+/* Styles that apply to BOTH links and buttons */
+.footer-bottom-links a,
+.footer-bottom-links button {
     color: white;
     text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block; /* Ensures consistent spacing */
+}
+
+/* Underline animation for both elements */
+.footer-bottom-links a.link-underline,
+.footer-bottom-links button.link-underline {
+    padding-bottom: 3px;
+}
+
+.footer-bottom-links a.link-underline::after,
+.footer-bottom-links button.link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.footer-bottom-links a.link-underline:hover::after,
+.footer-bottom-links button.link-underline:hover::after {
+    width: 100%;
 }
 
 .footer-line.glow-line {

@@ -143,6 +143,42 @@
     background: #f5f5f5;
 }
 
+.search-result-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-result-item:hover {
+    background-color: #f5f5f5;
+}
+
+.search-result-link h3 {
+    margin: 0 0 5px 0;
+    color: #1A237E;
+    font-size: 1.1rem;
+}
+
+.search-preview {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    color: #000;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+.search-loading {
+    padding: 15px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
 .highlight {
     background-color: #ffeb3b;
     color: #000;
@@ -354,160 +390,193 @@
 </style>
 
 <script>
-// Navbar functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
+    // Navbar Elements
     const hamburger = document.querySelector('.hamburger-menu');
     const navOverlay = document.querySelector('.nav-overlay');
     const navLinks = document.querySelectorAll('.nav-links li');
-    const returnPathButton = document.querySelector('.return-path-button');
     const searchInput = document.querySelector('.search-input');
     const searchResults = document.querySelector('.search-results');
     const searchIcon = document.querySelector('.search-icon');
 
-    // Enhanced search content with keywords
-    const searchContent = [
-        { title: "Home", url: "index.html", keywords: ["main", "start", "homepage"] },
-        { title: "About", url: "about.html", keywords: ["about us", "company", "team", "story"] },
-        { title: "Solutions", url: "solutions.html", keywords: ["services", "offerings", "solutions"] },
-        { title: "Projects", url: "projects.html", keywords: ["portfolio", "work", "case studies"] },
-        { title: "Blog", url: "blog.html", keywords: ["news", "articles", "posts"] },
-        { title: "Contact", url: "contact.html", keywords: ["reach us", "get in touch", "email"] },
-        { title: "Basement Solutions", url: "solutions/basement.html", keywords: ["basement", "cellar", "underground"] },
-        { title: "Bathroom Solutions", url: "solutions/bathroom.html", keywords: ["bathroom", "toilet", "shower"] },
-        { title: "Roof Solutions", url: "solutions/roof.html", keywords: ["roof", "rooftop", "ceiling"] }
+    // Mobile Menu Toggle
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+    });
+
+    // Search Implementation
+    const pagesToSearch = [
+        'index.html',
+        'about.html',
+        'blog.html',
+        'projects.html',
+        'contact.html',
+        'solutions.html'
     ];
 
-    // GSAP Timeline for overlay menu animations
-    const tl = gsap.timeline({ paused: true });
-    tl.to(navOverlay, {
-        left: 0,
-        duration: 0.5,
-        ease: "power2.out"
-    })
-    .from(navLinks, {
-        opacity: 0,
-        y: 20,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "power2.out"
-    }, "-=0.3");
+    let searchIndex = [];
+    let searchTimeout;
 
-    // Hamburger menu toggle
-    hamburger.addEventListener('click', (e) => {
-        e.stopPropagation();
+    // Initialize search
+    (async function() {
+        try {
+            // Load and index all pages
+            searchIndex = await Promise.all(pagesToSearch.map(async url => {
+                try {
+                    const response = await fetch(url);
+                    const html = await response.text();
+                    const doc = new DOMParser().parseFromString(html, 'text/html');
 
-        if (!navOverlay.classList.contains('active')) {
-            tl.play();
-            navOverlay.classList.add('active');
-            hamburger.classList.add('active');
-        } else {
-            tl.reverse().then(() => {
-                navOverlay.classList.remove('active');
-                hamburger.classList.remove('active');
+                    // Extract main content (skip nav/footer)
+                    const main = doc.querySelector('main') || doc.body;
+                    const content = main.textContent
+                        .replace(/\s+/g, ' ')
+                        .trim();
+
+                    return {
+                        url,
+                        title: doc.title || url,
+                        content: content.toLowerCase()
+                    };
+                } catch (error) {
+                    console.warn(`Skipping ${url}:`, error);
+                    return null;
+                }
+            }));
+
+            // Remove any failed pages
+            searchIndex = searchIndex.filter(page => page !== null);
+
+            // Set up search event listeners
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    searchPages(this.value.trim());
+                }, 300);
             });
-        }
-    });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.nav-overlay') && navOverlay.classList.contains('active')) {
-            tl.reverse().then(() => {
-                navOverlay.classList.remove('active');
-                hamburger.classList.remove('active');
+            searchIcon.addEventListener('click', () => {
+                if (searchInput.value.trim()) {
+                    searchPages(searchInput.value.trim());
+                }
             });
+
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    searchPages(searchInput.value.trim());
+                }
+            });
+
+        } catch (error) {
+            console.error('Search init failed:', error);
+            searchResults.innerHTML = '<div class="search-error">Search temporarily unavailable</div>';
         }
-    });
+    })();
 
-    // Return path button
-    returnPathButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        history.back();
-    });
-
-    // Enhanced Search Functionality
-    function performSearch() {
-        const query = searchInput.value.trim().toLowerCase();
-        searchResults.innerHTML = '';
-
+    function searchPages(query) {
         if (!query) {
             searchResults.classList.remove('active');
             return;
         }
 
-        // Find matches in both title and keywords
-        const results = searchContent.filter(item => {
-            const titleMatch = item.title.toLowerCase().includes(query);
-            const keywordMatch = item.keywords.some(keyword =>
-                keyword.toLowerCase().includes(query)
-            );
-            return titleMatch || keywordMatch;
-        });
+        searchResults.innerHTML = '<div class="search-loading">Searching...</div>';
+        searchResults.classList.add('active');
 
-        displayResults(results, query);
+        setTimeout(() => {
+            const queryLower = query.toLowerCase();
+            const results = [];
+
+            searchIndex.forEach(page => {
+                const titlePos = page.title.toLowerCase().indexOf(queryLower);
+                const contentPos = page.content.indexOf(queryLower);
+
+                if (titlePos >= 0 || contentPos >= 0) {
+                    // Calculate relevance score
+                    let score = 0;
+                    if (titlePos >= 0) score += 3;
+                    if (contentPos >= 0) score += 1;
+
+                    // Count all occurrences
+                    const titleMatches = (page.title.match(new RegExp(queryLower, 'g')) || []).length;
+                    const contentMatches = (page.content.match(new RegExp(queryLower, 'g')) || []).length;
+                    score += (titleMatches * 2) + contentMatches;
+
+                    results.push({
+                        url: page.url,
+                        title: page.title,
+                        content: page.content,
+                        score: score
+                    });
+                }
+            });
+
+            // Sort by score and display
+            displayResults(
+                results.sort((a, b) => b.score - a.score),
+                queryLower
+            );
+        }, 50);
     }
 
     function displayResults(results, query) {
+        searchResults.innerHTML = '';
+
         if (results.length === 0) {
-            const noResults = document.createElement('div');
-            noResults.className = 'no-results';
-            noResults.textContent = 'No results found';
-            searchResults.appendChild(noResults);
-        } else {
-            results.forEach(result => {
-                const link = document.createElement('a');
-                link.href = result.url;
-
-                // Highlight matching text
-                const title = result.title;
-                const matchIndex = title.toLowerCase().indexOf(query);
-
-                if (matchIndex >= 0) {
-                    const beforeMatch = title.substring(0, matchIndex);
-                    const matchText = title.substring(matchIndex, matchIndex + query.length);
-                    const afterMatch = title.substring(matchIndex + query.length);
-
-                    link.innerHTML = `${beforeMatch}<span class="highlight">${matchText}</span>${afterMatch}`;
-                } else {
-                    // If match is in keywords but not title, just show title
-                    link.textContent = title;
-                }
-
-                searchResults.appendChild(link);
-            });
+            searchResults.innerHTML = `
+                <div class="no-results">
+                    No results found for "${query}"
+                </div>
+            `;
+            return;
         }
 
-        searchResults.classList.add('active');
+        results.slice(0, 5).forEach(result => {
+            const resultItem = document.createElement('a');
+            resultItem.href = result.url;
+            resultItem.className = 'search-result';
+
+            // Highlight title matches
+            const title = result.title.replace(
+                new RegExp(query, 'gi'),
+                match => `<span class="highlight">${match}</span>`
+            );
+
+            // Find best content snippet
+            const matchPos = result.content.indexOf(query);
+            let preview = '';
+            if (matchPos >= 0) {
+                const start = Math.max(0, matchPos - 50);
+                const end = Math.min(result.content.length, matchPos + query.length + 50);
+                preview = result.content.substring(start, end);
+                if (start > 0) preview = '...' + preview;
+                if (end < result.content.length) preview += '...';
+
+                preview = preview.replace(
+                    new RegExp(query, 'gi'),
+                    match => `<span class="highlight">${match}</span>`
+                );
+            }
+
+            resultItem.innerHTML = `
+                <h3>${title}</h3>
+                ${preview ? `<p>${preview}</p>` : ''}
+            `;
+
+            searchResults.appendChild(resultItem);
+        });
     }
 
-    // Search event listeners
-    searchInput.addEventListener('input', performSearch);
-    searchIcon.addEventListener('click', () => {
-        if (searchInput.value.trim()) {
-            performSearch();
-        }
-    });
-
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter' && searchInput.value.trim()) {
-            performSearch();
-            const firstResult = searchResults.querySelector('a');
-            if (firstResult) {
-                window.location.href = firstResult.href;
-            }
-        }
-    });
-
-    // Close results when clicking outside
-    document.addEventListener('click', (e) => {
+    // Close search when clicking outside
+    document.addEventListener('click', function(e) {
         if (!e.target.closest('.search-container') &&
             !e.target.closest('.search-results')) {
             searchResults.classList.remove('active');
         }
     });
 
-    // Close results with Escape key
-    document.addEventListener('keydown', (e) => {
+    // Close with Escape key
+    document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             searchResults.classList.remove('active');
             searchInput.blur();
