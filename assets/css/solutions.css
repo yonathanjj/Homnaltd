@@ -470,3 +470,12 @@
                 grid-template-columns: 1fr;
             }
         }
+
+
+
+
+
+
+        .product-actions a.action-btn.secondary-btn { background: #f0f0f0; color: #333; border: 1px solid #ddd; padding: 8px 16px; border-radius: 4px; text-decoration: none; display: inline-block; margin-left: 10px; transition: all 0.3s ease; }
+.product-actions a.action-btn.secondary-btn:hover { background: #e0e0e0; }
+.product-actions button.action-btn.secondary-btn:disabled { opacity: 0.5; cursor: not-allowed; background: #f0f0f0; color: #999; border: 1px solid #ddd; padding: 8px 16px; border-radius: 4px; margin-left: 10px; }
