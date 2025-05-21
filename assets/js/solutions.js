@@ -5,380 +5,494 @@ const partnersData = {
     logo: "https://www.sika.com/content/dam/dms/sika/images-3/logo/sika-logo.png",
     solutions: {
         // 1. Concrete Admixtures
-        concreteAdmixtures: {
-            name: "Concrete Admixtures",
-            description: "Innovative admixtures for enhanced concrete performance",
-            products: {
-                "sika-plastiment-201-ae": {
-                    name: "Sika® Plastiment®-201 AE",
-                    images: [],
-                    description: "Water reducing and retarding concrete admixture that slows cement hydration, delaying initial set while maintaining accelerated hardening rate. Suitable for hot and tropical climates.",
-                    features: [
-                        "Controlled setting times",
-                        "Increased setting time in hot weather",
-                        "Accelerated hardening after setting",
-                        "Improved workability without increased water content",
-                        "Reduced water content without loss of workability",
-                        "Increased strengths",
-                        "Reduced shrinkage and creep",
-                        "Superior surface finish",
-                        "Chloride-free formulation"
-                    ],
-                    applications: [
-                        "Large volume pours",
-                        "Avoidance of cold joints",
-                        "Construction joints without formwork",
-                        "Long hauls",
-                        "Difficult placing conditions",
-                        "Elevated ambient temperatures"
-                    ],
-                    packaging: "200 L drums and 1000 L flow bins",
-                    color: "Dark brown",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c1.pdf"
-                },
-                "sikament-340": {
-                    name: "Sikament®-340",
-                    images: [],
-                    description: "Liquid superplasticizer retarder admixture composed of polymer sulfonates for extended concrete workability. Recommended for summer climate.",
-                    features: [
-                        "15-20% water reduction",
-                        "Considerable improvement of workability",
-                        "More homogeneous mix of components",
-                        "Increased compressive strength",
-                        "Reduction in shrinkage and fluage effect",
-                        "Long lasting durability",
-                        "Chloride-free"
-                    ],
-                    applications: [
-                        "High performance concrete",
-                        "High compressive strength concrete",
-                        "Low permeability concrete",
-                        "High durability concrete",
-                        "Ready mix industry applications"
-                    ],
-                    packaging: "200 litres drum, 1000 litres IBC",
-                    color: "Dark brown liquid",
-                    specSheet: "pdf/sikament-340-spec-sheet.pdf"
-                },
-                "sikament-nn": {
-                    name: "Sikament® NN",
-                    images: [
-                    "assets/sika/ConcreteAdmixtures/c3.png"
-                    ],
-                    description: "High range water reducer/superplasticizer admixture especially suitable for free flowing and high strength concrete in hot climates.",
-                    features: [
-                        "Up to 25% water reduction",
-                        "Improved workability and placement",
-                        "Excellent for congested reinforcement",
-                        "Improved cohesion reducing segregation risk",
-                        "Pronounced increase of final strength",
-                        "Reduced permeability"
-                    ],
-                    applications: [
-                        "Concrete with strong fluidity",
-                        "High quality concrete",
-                        "Sprayed concrete",
-                        "Textured surface finishes",
-                        "Pre-cast and pre-stressed concrete"
-                    ],
-                    packaging: "1000 litres IBC, 200 litres Drum, 20 litres Jerrycan",
-                    color: "Dark brown",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c3.pdf"
-                },
-                "sikament-nng": {
-                    name: "Sikament® NNG",
-                    images: [],
-                    description: "Superplasticizer/high range water-reducer and retarding admixture for free flowing and high strength concrete in hot climates.",
-                    features: [
-                        "Up to 25% water reduction",
-                        "Greatly improved workability",
-                        "Good slump keeping properties",
-                        "Easy placing with less vibration needed",
-                        "Pronounced increase of final strengths",
-                        "Reduced permeability"
-                    ],
-                    applications: [
-                        "Concrete with strong fluidity",
-                        "High quality concrete",
-                        "Precast concrete",
-                        "Long transportation/delayed placing",
-                        "High temperature applications"
-                    ],
-                    packaging: "1,000 litres IBC, 200 litres Drum, 20 litres Jerrycan",
-                    color: "Dark Brown Liquid",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c4.pdf"
-                },
-                "sika-visco-crete-20-et": {
-                    name: "Sika® ViscoCrete®-20 ET",
-                    images: [],
-                    description: "High range water reducer/superplasticizer and retarding admixture for concrete requiring high early strength and flowability in tropical/hot climates.",
-                    features: [
-                        "High water reduction",
-                        "High final density and strength",
-                        "Reduced shrinkage and creep",
-                        "Improved flowability and compacting",
-                        "Improved surface finish",
-                        "Early strength development",
-                        "Chloride-free"
-                    ],
-                    applications: [
-                        "Precast concrete",
-                        "Fast-track concrete",
-                        "In situ concrete requiring fast stripping",
-                        "Self-Compacting Concrete (SCC)"
-                    ],
-                    packaging: "1,000liter IBC tanker, 200liter drum",
-                    color: "Dark brown liquid",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c5.pdf"
-                },
-                "sika-1-concrete": {
-                    name: "Sika®-1",
-                    images: [
-                    "assets/sika/ConcreteAdmixtures/c6.png"
-                    ],
-                    description: "Normal setting liquid waterproofing admixture for mortar and concrete that blocks capillaries and pores.",
-                    features: [
-                        "Increased impermeability",
-                        "Waterproof but vapor permeable",
-                        "Ready to use",
-                        "Easily dispersed",
-                        "Chloride-free",
-                        "Non-toxic"
-                    ],
-                    applications: [
-                        "Renders, masonry mortars and screeds",
-                        "Reinforced and unreinforced concrete",
-                        "Brick, concrete and stone substrates",
-                        "Basements, swimming pools, tunnels",
-                        "Hot climate applications"
-                    ],
-                    packaging: "1,000 L IBC, 200 L drum, 5 and 20L pails",
-                    color: "Yellow liquid",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c6.pdf"
-                },
-                "sikacontrol-100-wt-et": {
-                    name: "SikaControl®-100 WT ET",
-                    images: [],
-                    description: "Liquid water resisting admixture that reduces concrete permeability through crystallization technology.",
-                    features: [
-                        "Produces watertight concrete",
-                        "Chlorine free",
-                        "No impact on setting time",
-                        "No effect on mechanical resistance",
-                        "Blocks capillaries through crystallization"
-                    ],
-                    applications: [
-                        "Foundations and concrete slabs",
-                        "Basements and lift pits",
-                        "Swimming pools and reservoirs",
-                        "Tunnels and rafts",
-                        "Structures exposed to aggressive waters"
-                    ],
-                    packaging: "1,000 litres IBC, 200 litres Drum, 5 and 20 litres Jerrycan",
-                    color: "Off white liquid",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c7.pdf"
-                },
-                "sikatard-et": {
-                    name: "SikaTard® ET",
-                    images: [],
-                    description: "Set-retarding admixture for all types of concrete, screeds or mortars. Complies with ASTM C 494 type B.",
-                    features: [
-                        "Improves workability with reduced water",
-                        "Delays setting times",
-                        "Preserves fluidity during placement",
-                        "Delays heat release from hydration",
-                        "Improves mechanical strengths",
-                        "Increases compactness and watertightness",
-                        "Reduces shrinkage and creeping"
-                    ],
-                    applications: [
-                        "Hot weather concreting",
-                        "Mass concrete (dams, etc.)",
-                        "Concreting rework",
-                        "Long-duration concrete transport",
-                        "Pumped concrete",
-                        "Architectural concrete"
-                    ],
-                    packaging: "1,000 L IBC, 200 L drum, 20 L pails",
-                    color: "Light Brown",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c8.pdf"
-                },
-                "plastiretard": {
-                    name: "Plastiretard",
-                    images: [],
-                    description: "Set-retarding admixture that can behave as water-reducer when used in certain proportions.",
-                    features: [
-                        "Improves workability with reduced water",
-                        "Delays setting times",
-                        "Preserves fluidity during placement",
-                        "Delays heat release from hydration",
-                        "Improves mechanical strengths",
-                        "Increases compactness and watertightness",
-                        "Reduces shrinkage and creeping"
-                    ],
-                    applications: [
-                        "Hot weather concreting",
-                        "Mass concrete applications",
-                        "Concreting rework",
-                        "Long-distance concrete transport",
-                        "Pumped concrete",
-                        "Architectural concrete"
-                    ],
-                    packaging: "200 lit drum, 1,000 litres IBC",
-                    color: "Light brown",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c9.pdf"
-                },
-                "sika-sigunit-l": {
-                    name: "Sika® Sigunit® L",
-                    images: [],
-                    description: "Liquid shotcrete accelerating admixture for wet spray process with momentary gluing effect.",
-                    features: [
-                        "Increased internal cohesion and adhesion",
-                        "Thick layers in one application",
-                        "Improved overhead application",
-                        "High strength dense shotcrete",
-                        "Reduces rebound and dust",
-                        "Chloride free",
-                        "Improves watertightness"
-                    ],
-                    applications: [
-                        "Fixing rocks and slopes",
-                        "Tunnel linings",
-                        "Underground structures",
-                        "Repairs",
-                        "Rock and soil stabilisation"
-                    ],
-                    packaging: "200L drums, 1,000L IBC tankers",
-                    color: "Colorless liquid",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c10.pdf"
-                },
-                "sika-sigunit-l-89-af": {
-                    name: "Sika® Sigunit® L-89 AF",
-                    images: [],
-                    description: "Highly effective, alkali-free accelerating admixture for wet and dry sprayed concrete with rapid strength development.",
-                    features: [
-                        "Rapid mechanical strength development",
-                        "Reduces concrete rebound",
-                        "Improves overhead application",
-                        "Alkali and chloride free",
-                        "Short setting times"
-                    ],
-                    applications: [
-                        "High quality sprayed concrete coatings",
-                        "Tunnel structural repair",
-                        "Tunnel consolidation during excavation",
-                        "Rock and slope consolidation"
-                    ],
-                    packaging: "Bulk tanker - 1,200kg IBC tank",
-                    color: "Straw yellow liquid",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c11.pdf"
-                }
-            }
+concreteAdmixtures: {
+    name: "Concrete Admixtures",
+    description: "Innovative admixtures for enhanced concrete performance in all construction applications",
+    products: {
+        "sikament-nng": { // c1
+            name: "Sikament® NNG",
+            images: ["assets/sika/ConcreteAdmixtures/c1.png"],
+            description: "Superplasticizer/high range water-reducer for free flowing and high strength concrete, especially effective in hot climates.",
+            features: [
+                "Up to 25% water reduction",
+                "Excellent slump retention",
+                "Improved workability and placement",
+                "Enhanced final strengths",
+                "Reduced permeability",
+                "Chloride-free formulation"
+            ],
+            applications: [
+                "High fluidity concrete",
+                "Precast concrete elements",
+                "Long transportation/delayed placing",
+                "High temperature applications",
+                "Densely reinforced structures"
+            ],
+            packaging: "1000 L flowbin, 200 L drum, 20 L jerrican",
+            color: "Dark brown liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c1.pdf"
         },
+        "sika-visco-crete-20-he": { // c2
+            name: "Sika® ViscoCrete®-20 HE",
+            images: ["assets/sika/ConcreteAdmixtures/c2.png"],
+            description: "High range water reducer/superplasticizer for concrete requiring high early strength and flowability in tropical climates.",
+            features: [
+                "High water reduction (up to 30%)",
+                "Accelerated strength development",
+                "Improved flowability and compaction",
+                "Reduced shrinkage and creep",
+                "Enhanced surface finish",
+                "ASTM C494 Type G compliant"
+            ],
+            applications: [
+                "Precast concrete production",
+                "Fast-track construction",
+                "Self-compacting concrete (SCC)",
+                "Early formwork removal",
+                "Hot weather concreting"
+            ],
+            packaging: "1000 L flowbin, bulk tankers available",
+            color: "Light brown liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c2.pdf"
+        },
+        "sika-visco-crete-90-he": { // c3
+            name: "Sika® ViscoCrete®-90 HE",
+            images: ["assets/sika/ConcreteAdmixtures/c3.png"],
+            description: "Third generation accelerated superplasticizer for precast concrete with powerful water reduction and excellent flowability.",
+            features: [
+                "Extremely high water reduction",
+                "Excellent early strength development",
+                "Improved freeze-thaw resistance",
+                "Reduced energy for steam curing",
+                "EN 934-2 compliant",
+                "Chloride and alkali free"
+            ],
+            applications: [
+                "Precast concrete elements",
+                "SCC applications",
+                "Road and runway repairs",
+                "Architectural concrete",
+                "High-performance concrete"
+            ],
+            packaging: "200 L drums, 1000 L IBCs",
+            color: "Light yellowish liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c3.pdf"
+        },
+        "sika-visco-crete-3088": { // c4
+            name: "Sika® ViscoCrete®-3088",
+            images: ["assets/sika/ConcreteAdmixtures/c4.png"],
+            description: "High range water reducing admixture with retarding properties for extended workability and long transport times.",
+            features: [
+                "Up to 30% water reduction",
+                "Extended workability retention",
+                "Improved concrete density",
+                "Reduced carbonation rate",
+                "EN 934-2 compliant",
+                "Non-corrosive to reinforcement"
+            ],
+            applications: [
+                "Ready-mix concrete",
+                "Hot weather concreting",
+                "High fines concrete",
+                "Reactive cement mixes",
+                "Long haul deliveries"
+            ],
+            packaging: "25 L plastic, 200 L metal, 1000 L IBC",
+            color: "Yellowish liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c4.pdf"
+        },
+        "sika-paver-2-hc-ke": { // c5
+            name: "SikaPaver®-2 HC KE",
+            images: ["assets/sika/ConcreteAdmixtures/c5.png"],
+            description: "High performance compaction aid for semi-dry/no-slump concrete products requiring instant demolding.",
+            features: [
+                "Improved mold filling",
+                "Enhanced surface finish",
+                "Increased green strength",
+                "Reduced product variation",
+                "EN 934-2 compliant",
+                "Optimized compaction process"
+            ],
+            applications: [
+                "Concrete paving blocks",
+                "Kerbstones and edgings",
+                "Building blocks/bricks",
+                "Concrete pipes/manholes",
+                "Landscape products"
+            ],
+            packaging: "5 L, 25 L jerricans, 200 L drums, 1000 L IBCs",
+            color: "Clear liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c5.pdf"
+        },
+        "sika-fiber": { // c6
+            name: "Sika Fiber®",
+            images: ["assets/sika/ConcreteAdmixtures/c6.png"],
+            description: "Monofilament polypropylene fibers for reducing plastic shrinkage cracking and enhancing concrete durability.",
+            features: [
+                "Reduces plastic shrinkage cracks",
+                "Improves freeze-thaw resistance",
+                "Reduces explosive spalling in fire",
+                "ASTM C-1116 compliant",
+                "Available in multiple lengths",
+                "Non-corrosive and alkali resistant"
+            ],
+            applications: [
+                "Industrial floor slabs",
+                "Water retaining structures",
+                "Precast concrete elements",
+                "Shotcrete applications",
+                "Bridge decks"
+            ],
+            packaging: "0.9 kg bags (1m³ dosage), 20-500 kg bulk boxes",
+            color: "Natural polypropylene",
+            specSheet: "assets/sika/ConcreteAdmixtures/c6.pdf"
+        },
+        "sika-antisol-wb": { // c7
+            name: "Sika® Antisol® WB",
+            images: ["assets/sika/ConcreteAdmixtures/c7.png"],
+            description: "Water-based curing compound, primer and sealer for freshly laid concrete in hot climates.",
+            features: [
+                "Reduces plastic cracking",
+                "ASTM C 309 Type 1 compliant",
+                "Non-flammable and non-toxic",
+                "Acts as primer for coatings",
+                "Reduces dusting and water loss",
+                "Improves surface hardness"
+            ],
+            applications: [
+                "Highways and runways",
+                "Pre-stressed beams",
+                "Irrigation channels",
+                "Roof decks",
+                "Architectural concrete"
+            ],
+            packaging: "20 L cans, 200 L drums",
+            color: "White milky liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c7.pdf"
+        },
+        "sika-separol-gu": { // c8
+            name: "Sika® Separol® GU",
+            images: ["assets/sika/ConcreteAdmixtures/c8.png"],
+            description: "Oil-based form release agent for clean demolding and high-quality concrete surface finishes.",
+            features: [
+                "Suitable for all formwork materials",
+                "Easy clean striking",
+                "Improved surface finish",
+                "Reduces concrete contamination",
+                "Economical coverage rates",
+                "Non-staining"
+            ],
+            applications: [
+                "Architectural concrete",
+                "Precast elements",
+                "Tilt-up construction",
+                "Bridge components",
+                "All formwork types"
+            ],
+            packaging: "25 L, 200 L drums, 1000 L IBC",
+            color: "Brownish yellow liquid",
+            specSheet: "assets/sika/ConcreteAdmixtures/c8.pdf"
+        },
+        "sikacontrol-110-wt-ke": { // c9
+            name: "SikaControl®-110 WT KE",
+            images: ["assets/sika/ConcreteAdmixtures/c9.png"],
+            description: "Liquid mass water repellent that forms crystallization to waterproof concrete structures.",
+            features: [
+                "Forms waterproof crystallization",
+                "Chloride-free formulation",
+                "No impact on setting time",
+                "Resists aggressive waters",
+                "EN 934-2 compliant",
+                "Improves durability"
+            ],
+            applications: [
+                "Foundations and rafts",
+                "Water tanks",
+                "Marine structures",
+                "Selenite-resistant concrete",
+                "Industrial water containment"
+            ],
+            packaging: "5 L, 20 L jerricans, 200 L drums",
+            color: "Milky white/pale brown",
+            specSheet: "assets/sika/ConcreteAdmixtures/c9.pdf"
+        }
+    }
+},
 
-        // 2. Waterproofing
-        waterproofing: {
-            name: "Waterproofing Solutions",
-            description: "Comprehensive waterproofing systems for all construction needs",
-            products: {
-                "sika-cemflex": {
-                    name: "Sika® Cemflex®",
-                    images: [
-                    "assets/sika/WaterproofingSolutions/w1.png"
-                    ],
-                    description: "Universal waterproofing and bonding agent that improves water resistance and adhesion of Portland cement based composites.",
-                    features: [
-                        "Watertight",
-                        "Ideal for submerged applications",
-                        "Good abrasion resistance",
-                        "Non-toxic",
-                        "Oil resistant",
-                        "UV stable"
-                    ],
-                    applications: [
-                        "Reservoirs",
-                        "Shower floors and walls",
-                        "Balcony and veranda floors",
-                        "Retaining walls",
-                        "Plaster and render bonding"
-                    ],
-                    packaging: "20L pails, 200L containers, 1m² DIY kits",
-                    color: "Liquid off white",
-                    specSheet: "assets/sika/WaterproofingSolutions/w1.pdf"
-                },
-                "sikaseal-105": {
-                    name: "SikaSeal®-105",
-                    images: [
-                    "assets/sika/WaterproofingSolutions/w2.png"
-                    ],
-                    description: "Cement based, polymer modified, 2-component multipurpose waterproofing slurry.",
-                    features: [
-                        "Impermeable",
-                        "Brush, trowel or spray applied",
-                        "Good adhesion to substrates",
-                        "Non-toxic",
-                        "Works against positive/negative water pressure"
-                    ],
-                    applications: [
-                        "Water & sewage works",
-                        "Basements and lift pits",
-                        "Retaining walls",
-                        "Sea walls",
-                        "Balconies and bathrooms"
-                    ],
-                    packaging: "25 kg units (5 kg pails + 20 kg bags)",
-                    color: "Component A: White liquid, Component B: Grey powder",
-                    specSheet: "assets/sika/WaterproofingSolutions/w2.pdf"
-                },
-                "super-sikalite": {
-                    name: "Super Sikalite®",
-                    images: [
-                    "assets/sika/WaterproofingSolutions/w4.png"
-                    ],
-                    description: "Powdered waterproofing admixture that blocks capillaries in Portland cement/sand mortars.",
-                    features: [
-                        "Easy to use",
-                        "Economical",
-                        "Convenient powdered form",
-                        "Watertight but vapor permeable",
-                        "Chloride free"
-                    ],
-                    applications: [
-                        "Wall renders",
-                        "Facades",
-                        "Floor toppings",
-                        "Jointing mortars"
-                    ],
-                    packaging: "1kg unit",
-                    color: "Beige powder",
-                    specSheet: "assets/sika/ConcreteAdmixtures/c11.pdf"
-                },
-                "sika-1-waterproofing": {
-                    name: "Sika®-1",
-                    images: [
-                    "assets/sika/WaterproofingSolutions/w3.png"
-                    ],
-                    description: "Normal setting liquid waterproofing admixture for mortar and concrete.",
-                    features: [
-                        "Blocks capillaries and pores",
-                        "Waterproof but vapor permeable",
-                        "Ready to use",
-                        "Easily dispersed",
-                        "Chloride-free",
-                        "Non-toxic"
-                    ],
-                    applications: [
-                        "Renders and screeds",
-                        "Reinforced/unreinforced concrete",
-                        "Brick, concrete and stone substrates",
-                        "Basements, swimming pools, tunnels"
-                    ],
-                    packaging: "1,000 L IBC, 200 L drum, 5 and 20L pails",
-                    color: "Yellow liquid",
-                    specSheet: "assets/sika/WaterproofingSolutions/w3.pdf"
-                }
-            }
+       // 2. Waterproofing
+waterproofing: {
+    name: "Waterproofing Solutions",
+    description: "Comprehensive waterproofing systems for all construction needs",
+    products: {
+        "sikalite": {
+            name: "Sikalite®",
+            images: ["assets/sika/WaterproofingSolutions/w1.png"],
+            description: "Powdered waterproofing admixture for mortar that blocks capillaries and pores in Portland cement/sand mortars preventing moisture movement.",
+            features: [
+                "Easy to use",
+                "Economical",
+                "Convenient powdered form",
+                "Watertight but vapour permeable",
+                "Chloride free"
+            ],
+            applications: [
+                "Walls",
+                "Facades",
+                "Floor toppings",
+                "Jointing mortars"
+            ],
+            packaging: "1, 25 and 200kg",
+            color: "Beige powder",
+            specSheet: "assets/sika/WaterproofingSolutions/w1.pdf"
         },
+        "sika-cemflex": {
+            name: "Sika® Cemflex®",
+            images: ["assets/sika/WaterproofingSolutions/w2.png"],
+            description: "Universal waterproofing and bonding agent that improves water resistance and adhesion of Portland cement based composites.",
+            features: [
+                "Watertight",
+                "Ideal for submerged applications",
+                "Good abrasion resistance",
+                "Non-toxic",
+                "Oil resistant",
+                "UV stable"
+            ],
+            applications: [
+                "Reservoirs",
+                "Shower floors and walls",
+                "Balcony and veranda floors",
+                "Retaining walls",
+                "Plaster and render bonding"
+            ],
+            packaging: "5, 25, 200 and 1000L containers",
+            color: "Off white (Pale Grey)",
+            specSheet: "assets/sika/WaterproofingSolutions/w2.pdf"
+        },
+        "sikatop-105-seal-ke": {
+            name: "SikaTop®-105 Seal KE",
+            images: ["assets/sika/WaterproofingSolutions/w3.png"],
+            description: "Cement based, polymer modified, 2-component multipurpose waterproofing slurry with crystallization action and pore blocking effect.",
+            features: [
+                "Impermeable",
+                "Brush, trowel or spray applied",
+                "Good adhesion to substrates",
+                "Pre-batched components",
+                "Works against positive/negative water pressure"
+            ],
+            applications: [
+                "Concrete water works",
+                "Balconies and bathrooms",
+                "Basements and cellars",
+                "Waterproofing of concrete structures"
+            ],
+            packaging: "25 kg units (5 kg pails + 20 kg bags)",
+            color: "Component A: White liquid, Component B: Grey powder",
+            specSheet: "assets/sika/WaterproofingSolutions/w3.pdf"
+        },
+        "sikatop-seal-107-ke": {
+            name: "SikaTop® Seal-107 KE",
+            images: ["assets/sika/WaterproofingSolutions/w4.png"],
+            description: "Two part polymer modified cementitious waterproof mortar slurry that is slightly flexible to tolerate fine cracks.",
+            features: [
+                "Easy to apply by brush or trowel",
+                "No water required",
+                "Very good adhesion",
+                "Protects against water penetration",
+                "Non-corrosive to steel",
+                "Overpaintable"
+            ],
+            applications: [
+                "Water tanks and hydraulic structures",
+                "Basements in new construction",
+                "Terraces and balconies",
+                "Swimming pools and fountains",
+                "Bathrooms and lift pits"
+            ],
+            packaging: "25 kg units (20 kg bag + 5 kg pail)",
+            color: "Component A: White liquid, Component B: Grey powder",
+            specSheet: "assets/sika/WaterproofingSolutions/w4.pdf"
+        },
+        "sikatop-130-flex-ke": {
+            name: "SikaTop®-130 Flex KE",
+            images: ["assets/sika/WaterproofingSolutions/w5.png"],
+            description: "2-component flexible waterproofing mortar with selected aggregates and modified polymers for surfaces requiring crack bridging.",
+            features: [
+                "Waterproof and water vapour permeable",
+                "Good crack bridging properties",
+                "Low modulus of elasticity",
+                "Excellent adhesion",
+                "Resistant to de-icing salts",
+                "Approved for drinking water contact"
+            ],
+            applications: [
+                "Basements and underground walls",
+                "Swimming pools and water tanks",
+                "Marine environments",
+                "Bridges and terraces",
+                "Surfaces exposed to frost"
+            ],
+            packaging: "20 kg units (5 kg comp. A + 15 kg comp. B)",
+            color: "Component A: White liquid, Component B: Grey powder",
+            specSheet: "assets/sika/WaterproofingSolutions/w5.pdf"
+        },
+        "sikabit-pro-p45": {
+            name: "SikaBit® PRO P-45 G-0 MG",
+            images: ["assets/sika/WaterproofingSolutions/w6.png"],
+            description: "APP modified, bituminous, torch-applied waterproofing membrane reinforced with non-woven polyester.",
+            features: [
+                "Good watertightness",
+                "Excellent elongation",
+                "Cold flexible",
+                "Good mechanical properties",
+                "Easy torch installation",
+                "Mineral granule surface"
+            ],
+            applications: [
+                "Retaining walls and basements",
+                "Flat roofs and terraces",
+                "Underground car parks",
+                "Raft slabs",
+                "Wet areas"
+            ],
+            packaging: "10m × 1m rolls (~45 kg)",
+            color: "Mineral granule top, Polyethylene backing",
+            specSheet: "assets/sika/WaterproofingSolutions/w6.pdf"
+        },
+        "sika-wp-shield-primer": {
+            name: "Sika® WP Shield Primer",
+            images: ["assets/sika/WaterproofingSolutions/w7.png"],
+            description: "Water based modified bituminous primer for improved adhesion of bituminous sheet membranes.",
+            features: [
+                "Bonds well with old bituminous substrates",
+                "Excellent concrete adhesion",
+                "Easy brush, spray or roller application",
+                "Specially designed for tropical conditions",
+                "Surface activator for membranes"
+            ],
+            applications: [
+                "Primer for torch-on membranes",
+                "Primer for stick-on membranes",
+                "Surface preparation for waterproofing"
+            ],
+            packaging: "20 kg metal drum",
+            color: "Black/Brown",
+            specSheet: "assets/sika/WaterproofingSolutions/w7.pdf"
+        },
+        "sika-waterbar-dr-eg": {
+            name: "Sika Waterbar® DR EG",
+            images: ["assets/sika/WaterproofingSolutions/w8.png"],
+            description: "PVC-P external waterbars for sealing expansion joints in watertight concrete structures.",
+            features: [
+                "High tensile strength and elongation",
+                "Permanent flexibility",
+                "Resists medium hydrostatic pressure",
+                "Resistant to aggressive ground conditions",
+                "Weldable for continuous protection"
+            ],
+            applications: [
+                "Joint sealing in concrete structures",
+                "Residential/commercial basements",
+                "Underground car parks",
+                "Water containment structures"
+            ],
+            packaging: "15m standard rolls",
+            color: "Yellow",
+            specSheet: "assets/sika/WaterproofingSolutions/w8.pdf"
+        },
+        "sika-raintite": {
+            name: "Sika® RainTite",
+            images: ["assets/sika/WaterproofingSolutions/w9.png"],
+            description: "Acrylic waterproofing system combining flexible UV-resistant emulsion with polyester membrane.",
+            features: [
+                "External weather & UV resistant",
+                "Excellent adhesion",
+                "High flexibility",
+                "Non-toxic",
+                "Fungal growth resistant",
+                "Available in multiple colors"
+            ],
+            applications: [
+                "Concrete sloped roofs",
+                "Parapet walls",
+                "External walls",
+                "Sealing joints and roofing screws",
+                "Various roof types"
+            ],
+            packaging: "1 kg, 4 kg, 20 kg pails",
+            color: "Transparent, White, Ivory, Grey, Stone Grey, Green, Cream, Red",
+            specSheet: "assets/sika/WaterproofingSolutions/w9.pdf"
+        },
+        "sika-raintite-plus": {
+            name: "Sika® RainTite Plus",
+            images: ["assets/sika/WaterproofingSolutions/w10.png"],
+            description: "Enhanced acrylic waterproofing system with improved UV resistance and flexibility for demanding applications.",
+            features: [
+                "Advanced UV resistance",
+                "Higher flexibility than standard RainTite",
+                "Seamless membrane application",
+                "Non-toxic and environmentally friendly",
+                "Available in 8 standard colors",
+                "3000+ hours artificial weathering resistance"
+            ],
+            applications: [
+                "High-performance roof waterproofing",
+                "Architectural feature protection",
+                "Historic building preservation",
+                "Extreme climate applications",
+                "Solar panel roof integration"
+            ],
+            packaging: "1 kg, 4 kg, 20 kg pails",
+            color: "Transparent, White, Ivory, Grey, Stone Grey, Green, Cream, Red",
+            specSheet: "assets/sika/WaterproofingSolutions/w10.pdf"
+        },
+        "sikaswell-s2": {
+            name: "SikaSwell® S-2",
+            images: ["assets/sika/WaterproofingSolutions/w11.png"],
+            description: "Polyurethane hydrophilic swellable sealant that expands in contact with water to seal construction joints and penetrations.",
+            features: [
+                "1-part, easy application",
+                "Highly economical sealing solution",
+                "Optimized expansion rate",
+                "Permanently water resistant",
+                "Good adhesion to various substrates",
+                "No damage to fresh concrete"
+            ],
+            applications: [
+                "Construction joint sealing",
+                "Pipe and steel penetrations",
+                "Cable duct joints",
+                "Fixing swellable profiles",
+                "Basement waterproofing details"
+            ],
+            packaging: "300 ml cartridges (12/box), 600 ml unipacs (20/box)",
+            color: "Gray",
+            specSheet: "assets/sika/WaterproofingSolutions/w11.pdf"
+        },
+        "sikalastic-560-gcc": {
+            name: "Sikalastic®-560 GCC",
+            images: ["assets/sika/WaterproofingSolutions/w12.png"],
+            description: "Eco-friendly liquid applied roof waterproofing solution based on Sika Co-Elastic Technology (CET) for hot climates.",
+            features: [
+                "Highly elastic and crack-bridging",
+                "UV resistant and weatherproof",
+                "Water-based and VOC compliant",
+                "Cold-applied (no heat/flame required)",
+                "LEED and Estidama compliant",
+                "Solar reflective (SRI ≥ 90)"
+            ],
+            applications: [
+                "Exposed roof waterproofing",
+                "Complex geometry roofs",
+                "Roof life extension",
+                "Energy efficient cool roofs",
+                "Sustainable building projects"
+            ],
+            packaging: "20 kg and 25 kg plastic pails",
+            color: "White and Grey",
+            specSheet: "assets/sika/WaterproofingSolutions/w12.pdf"
+        }
+    }
+},
 
         // 3. Roofing
         roofing: {
@@ -1006,7 +1120,7 @@ const partnersData = {
         ],
         specSheet: "assets/sika/RoofingSolutions/j1.pdf"
     }
-}
+ }
 },
     kingspan: {
         name: "Kingspan",
@@ -1098,6 +1212,127 @@ const partnersData = {
                     }
                 }
             },
+            insulationBoards: {
+    name: "Insulation Boards",
+    description: "High-performance insulation solutions for roofs, walls, and floors to enhance energy efficiency and thermal performance in buildings.",
+    products: {
+        "greenguard-gg300": { // First product you mentioned = in1
+            name: "GreenGuard GG300",
+            images: ["assets/kingspan/InsulationBoards/in1.png"],
+            description: "Rigid extruded polystyrene insulation for inverted roofs, basements, car park decks and heavy duty commercial, industrial and cold store flooring.",
+            features: [
+                "High compressive strength",
+                "Moisture resistant",
+                "Compatible with green roof systems",
+                "Rigid extruded polystyrene",
+                "Ideal for heavy-duty applications"
+            ],
+            applications: [
+                "Inverted roof systems",
+                "Basement walls",
+                "Car park decks",
+                "Cold store flooring",
+                "Industrial flooring"
+            ],
+            specSheet: "assets/kingspan/InsulationBoards/in1.pdf"
+        },
+        "kooltherm-k10": { // Second product = in2
+            name: "Kooltherm K10 Soffit Board",
+            images: ["assets/kingspan/InsulationBoards/in2.png"],
+            description: "Quick and easy to install soffit insulation board with durable foil finish, offering thermal conductivity as low as 0.020 W/m.K at 23°C.",
+            features: [
+                "Thermal conductivity 0.020 W/m.K",
+                "FM Approved to FM 4880",
+                "Durable foil facings",
+                "Easy installation",
+                "Lightweight yet rigid"
+            ],
+            applications: [
+                "Soffit insulation",
+                "Structural ceilings",
+                "Canopy insulation",
+                "Underside of roof decks"
+            ],
+            specSheet: "assets/kingspan/InsulationBoards/in2.pdf"
+        },
+        "therma-tr22": { // Third product = in3
+            name: "Therma TR22",
+            images: ["assets/kingspan/InsulationBoards/in3.png"],
+            description: "High performance fibre-free polyisocyanurate (PIR) roof insulation board with high compressive strength.",
+            features: [
+                "Compressive stress exceeds 250 kPa",
+                "Rigid thermoset insulation",
+                "Compatible with green roofs",
+                "Excellent thermal performance",
+                "Lightweight and easy to handle"
+            ],
+            applications: [
+                "Flat roof insulation",
+                "Green roof systems",
+                "High traffic roof areas",
+                "Commercial roofing"
+            ],
+            specSheet: "assets/kingspan/InsulationBoards/in3.pdf"
+        },
+        "therma-tr27": { // Fourth product = in4
+            name: "Therma TR27",
+            images: ["assets/kingspan/InsulationBoards/in4.png"],
+            description: "PIR flat roof insulation suitable for roofs waterproofed with fully adhered single-ply and cold liquid applied waterproofing.",
+            features: [
+                "Compatible with single-ply systems",
+                "Suitable for green roofs",
+                "High thermal efficiency",
+                "Durable composite foil facings",
+                "Excellent fire performance"
+            ],
+            applications: [
+                "Adhered single-ply roofs",
+                "Cold liquid applied roofs",
+                "Protected membrane roofs",
+                "Commercial flat roofing"
+            ],
+            specSheet: "assets/kingspan/InsulationBoards/in4.pdf"
+        },
+        "thermataper-tt47": { // Fifth product = in5
+            name: "Thermataper TT47",
+            images: ["assets/kingspan/InsulationBoards/in5.png"],
+            description: "Tapered insulation designed to enhance water drainage for flat roofs with various waterproofing systems.",
+            features: [
+                "Pre-formed tapered design",
+                "Promotes positive drainage",
+                "Compatible with multiple waterproofing types",
+                "Custom slopes available",
+                "High compressive strength"
+            ],
+            applications: [
+                "Flat roof drainage systems",
+                "Roofs with adhered membranes",
+                "Mastic asphalt roofs",
+                "Built-up felt roofs"
+            ],
+            specSheet: "assets/kingspan/InsulationBoards/in5.pdf"
+        },
+        "thermaroof-tr26": { // Sixth product = in6
+            name: "Thermaroof TR26",
+            images: ["assets/kingspan/InsulationBoards/in6.png"],
+            description: "High performance PIR insulation board for flat roofs with 0.022 W/mK thermal conductivity, compatible with mechanically fixed single-ply systems.",
+            features: [
+                "Thermal conductivity 0.022 W/mK",
+                "Mechanically fixed system compatible",
+                "Green roof compatible",
+                "Fast track installation",
+                "Suitable for refurbishment"
+            ],
+            applications: [
+                "Mechanically fixed single-ply roofs",
+                "Roof refurbishment",
+                "Commercial roofing",
+                "Fast track projects"
+            ],
+            specSheet: "assets/kingspan/InsulationBoards/in6.pdf"
+        }
+    }
+},
             sandwichPanels: {
                 name: "Sandwich Panels",
                 description: "The complete high-performance, low-energy building envelope. Kingspan insulated panels are single-component, factory pre-engineered systems. Our technology has led the industry in thermal-efficiency, fire safety and lifetime durability.",
