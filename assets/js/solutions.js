@@ -493,237 +493,635 @@ waterproofing: {
         }
     }
 },
-
-        // 3. Roofing
-        roofing: {
-            name: "Roofing Solutions",
-            description: "Durable and protective roofing systems",
-            products: {
-                "sealoflex-professional": {
-                    name: "Sealoflex Professional",
-                    images: [
-                    "assets/sika/RoofingSolutions/w3.pdf"
-                    ],
-                    description: "Single component, acrylic based, flexible waterproofing compound with fiber reinforcement.",
-                    features: [
-                        "Ready to use",
-                        "Fiber reinforced",
-                        "Flexible and durable",
-                        "Good adhesion to roofing substrates",
-                        "Can be overcoated with acrylic paint"
-                    ],
-                    applications: [
-                        "Flat roofs",
-                        "Tiled roofs",
-                        "Parapet walls",
-                        "Flashing",
-                        "Overcoating existing roofs"
-                    ],
-                    packaging: "5 and 20L pails",
-                    color: "Thixotropic liquid, Off white",
-                    specSheet: "assets/sika/RoofingSolutions/r1.pdf"
-                },
-                "sika-cemflex-roofing": {
-                    name: "Sika® Cemflex®",
-                    images: [
-                    "assets/sika/RoofingSolutions/r2.png"
-                    ],
-                    description: "Universal waterproofing and bonding agent for roofing applications.",
-                    features: [
-                        "Watertight",
-                        "Good abrasion resistance",
-                        "Non-toxic",
-                        "Oil resistant",
-                        "UV stable"
-                    ],
-                    applications: [
-                        "Roof waterproofing",
-                        "Balcony and veranda floors",
-                        "Parapet walls"
-                    ],
-                    packaging: "20L pails, 200L containers",
-                    color: "Liquid off white",
-                    specSheet: "assets/sika/RoofingSolutions/r2.pdf"
-                }
-            }
+// 7. Repair and Protection
+repairAndProtection: {
+    name: "Repair and Protection",
+    description: "Comprehensive solutions for concrete repair, structural strengthening, and surface protection",
+    products: {
+        "sikalatex": { // rep1
+            name: "SikaLatex®",
+            images: ["assets/sika/RepairandProtection/rep1.png"],
+            description: "Synthetic rubber emulsion used as admixture for cementitious bonding bridges and high-quality site-mix mortars.",
+            features: [
+                "Increases adhesion strength",
+                "Reduces shrinkage and cracking",
+                "Improves abrasion resistance",
+                "Low chloride content (<0.1%)",
+                "Al Sa'fat certified (Dubai Green Building)",
+                "Suitable for hot climates"
+            ],
+            applications: [
+                "Patch repair mortars",
+                "Tile adhesives and grouts",
+                "Masonry mortars and renders",
+                "Bonding bridges"
+            ],
+            packaging: "20L cans, 200L drums",
+            color: "White liquid",
+            specSheet: "assets/sika/RepairandProtection/rep1.pdf"
         },
-
-        // 4. Grouting and Fixing
-        groutingFixing: {
-            name: "Grouting & Fixing",
-            description: "High-performance grouts and fixing solutions",
-            products: {
-                "sikagrout-212": {
-                    name: "SikaGrout®-212",
-                    images: [
-                    "assets/sika/Grouting&Fixing/g1.png"
-                    ],
-                    description: "1-component, ready to mix, free flowing, shrinkage compensated cementitious grout.",
-                    features: [
-                        "Easy to use",
-                        "Shrinkage compensated",
-                        "Good flow characteristics",
-                        "Rapid strength development",
-                        "Non-corrosive",
-                        "Can be pumped or poured"
-                    ],
-                    applications: [
-                        "Machine and base plates",
-                        "Dowling reinforcing bars",
-                        "Bedding joints in pre-cast concrete",
-                        "Filling cavities and voids",
-                        "Post fixings"
-                    ],
-                    packaging: "25 kg bags",
-                    color: "Grey powder",
-                    specSheet: "assets/sika/Grouting&Fixing/g1.pdf"
-                }
-            }
+        "sika-monotop-610": { // rep2
+            name: "Sika MonoTop®-610",
+            images: ["assets/sika/RepairandProtection/rep2.png"],
+            description: "Cementitious bonding primer and reinforcement corrosion protection slurry containing silica fume.",
+            features: [
+                "Easy mix (just add water)",
+                "Good chloride penetration resistance",
+                "Brush or spray application",
+                "2MPa tensile adhesion strength",
+                "30MPa compressive strength (28 days)",
+                "EN 1504-3 compliant"
+            ],
+            applications: [
+                "Concrete repair systems",
+                "Rebar corrosion protection",
+                "Substrate preparation",
+                "Structural repairs"
+            ],
+            packaging: "25kg bags",
+            color: "Grey powder",
+            specSheet: "assets/sika/RepairandProtection/rep2.pdf"
         },
+        "sika-monotop-412s": { // rep3
+            name: "Sika MonoTop®-412 S",
+            images: ["assets/sika/RepairandProtection/rep3.png"],
+            description: "Fiber-reinforced, low-shrinkage structural repair mortar meeting EN 1504-3 Class R4 requirements.",
+            features: [
+                "Up to 50mm application thickness",
+                "A1 fire rating",
+                "Sulfate resistant",
+                "45MPa compressive strength",
+                "No bonding primer required",
+                "Machine/hand application"
+            ],
+            applications: [
+                "Structural concrete repairs",
+                "Spall/damage restoration",
+                "Increasing bearing capacity",
+                "Carbonated concrete replacement"
+            ],
+            packaging: "25kg bags",
+            color: "Grey powder",
+            specSheet: "assets/sika/RepairandProtection/rep3.pdf"
+        },
+        "sika-monotop-620": { // rep4
+            name: "Sika MonoTop®-620",
+            images: ["assets/sika/RepairandProtection/rep4.png"],
+            description: "Polymer-modified surfacing mortar for pore sealing and levelling (EN 1504-3 Class R3).",
+            features: [
+                "1.5-5mm application thickness",
+                "30-35MPa compressive strength",
+                "Low shrinkage behavior",
+                "A1 fire rating",
+                "No primer required",
+                "Vertical/horizontal application"
+            ],
+            applications: [
+                "Concrete pore sealing",
+                "Edge/joint restoration",
+                "Honeycomb repair",
+                "Thin-layer renders"
+            ],
+            packaging: "25kg bags",
+            color: "Light grey powder",
+            specSheet: "assets/sika/RepairandProtection/rep4.pdf"
+        },
+        "sikagrout-212": { // rep5
+            name: "SikaGrout®-212",
+            images: ["assets/sika/RepairandProtection/rep5.png"],
+            description: "High-strength, shrinkage-compensated cementitious grout for general purpose applications.",
+            features: [
+                "Free-flowing consistency",
+                "95MPa compressive strength",
+                "No segregation/bleeding",
+                "Pumpable",
+                "Non-corrosive",
+                "10-100mm thickness range"
+            ],
+            applications: [
+                "Machine base plates",
+                "Precast concrete bedding",
+                "Post-installed rebar anchoring",
+                "Void filling"
+            ],
+            packaging: "25kg bags",
+            color: "Grey powder",
+            specSheet: "assets/sika/RepairandProtection/rep5.pdf"
+        },
+        "sikagrout-217": { // rep6
+            name: "SikaGrout®-217",
+            images: ["assets/sika/RepairandProtection/rep6.png"],
+            description: "High-performance grout for precision applications with controlled expansion system.",
+            features: [
+                "60MPa compressive strength",
+                "Shrinkage-compensated",
+                "Vibration resistant",
+                "Chloride-free",
+                "EN 1504-3 Class R4",
+                "10-150mm thickness"
+            ],
+            applications: [
+                "Turbine grouting",
+                "Bridge bearing devices",
+                "Rail anchoring",
+                "Industrial equipment"
+            ],
+            packaging: "25kg bags",
+            color: "Grey powder",
+            specSheet: "assets/sika/RepairandProtection/rep6.pdf"
+        },
+        "sikagrout-340-ke": { // rep7
+            name: "SikaGrout®-340 KE",
+            images: ["assets/sika/RepairandProtection/rep7.png"],
+            description: "High-strength engineering grout with 105MPa compressive strength and pumpability.",
+            features: [
+                "Early strength development",
+                "300mm maximum thickness",
+                "Shrinkage compensated",
+                "No bleeding",
+                "Long-distance pumping",
+                "12% water mixing ratio"
+            ],
+            applications: [
+                "Heavy equipment bases",
+                "Precast concrete joints",
+                "Post-installed anchors",
+                "Structural repairs"
+            ],
+            packaging: "25kg bags",
+            color: "Grey powder",
+            specSheet: "assets/sika/RepairandProtection/rep7.pdf"
+        },
+        "sikadur-31-cf-slow": { // rep8
+            name: "Sikadur®-31 CF Slow",
+            images: ["assets/sika/RepairandProtection/rep8.png"],
+            description: "Thixotropic epoxy adhesive for structural bonding and repairs in hot climates (25-45°C).",
+            features: [
+                "57MPa compressive strength",
+                "Non-sag vertical application",
+                "Shrinkage-free",
+                "ASTM C881 Type I Grade 3",
+                "Moisture tolerant",
+                "Al Sa'fat certified"
+            ],
+            applications: [
+                "Concrete element bonding",
+                "Edge/corner repairs",
+                "Crack sealing",
+                "Structural strengthening"
+            ],
+            packaging: "0.8kg+0.4kg sets (8/box), 4kg+2kg, 8kg+4kg",
+            color: "Component A: White, B: Black, Mixed: Grey",
+            specSheet: "assets/sika/RepairandProtection/rep8.pdf"
+        },
+        "sikagard-pw": { // rep9
+            name: "Sikagard® PW",
+            images: ["assets/sika/RepairandProtection/rep9.png"],
+            description: "Chemical-resistant epoxy coating for concrete and steel protection in aggressive environments.",
+            features: [
+                "Potable water contact approved",
+                "High-build (200μm/layer)",
+                "Sewage resistant",
+                "Glossy easy-clean finish",
+                "1.5MPa tensile adhesion",
+                "Al Sa'fat certified"
+            ],
+            applications: [
+                "Chemical storage tanks",
+                "Food processing plants",
+                "Sewage treatment",
+                "Below-grade protection"
+            ],
+            packaging: "5.6kg+1.4kg, 11.2kg+2.8kg, 16kg+4kg sets",
+            color: "Grey/white (custom colors available)",
+            specSheet: "assets/sika/RepairandProtection/rep9.pdf"
+        },
+        "sikagard-701w": { // rep10
+            name: "Sikagard®-701 W",
+            images: ["assets/sika/RepairandProtection/rep10.png"],
+            description: "Water-repellent micro-emulsion impregnation for mineral substrates.",
+            features: [
+                "Water-dilutable concentrate",
+                "Maintains vapor permeability",
+                "Reduces salt absorption",
+                "Non-film forming",
+                "Deep penetration",
+                "Low VOC"
+            ],
+            applications: [
+                "Concrete facade protection",
+                "Natural stone preservation",
+                "Brickwork water protection",
+                "Mineral surface treatment"
+            ],
+            packaging: "5L cans, 20L cans, 200L drums, 1000L flowbins",
+            color: "Colorless liquid",
+            specSheet: "assets/sika/RepairandProtection/rep10.pdf"
+        },
+        "sika-injection-107": { // rep11
+            name: "Sika® Injection-107",
+            images: ["assets/sika/RepairandProtection/rep11.png"],
+            description: "Polyurethane foaming injection resin for permanent watertight sealing of cracks.",
+            features: [
+                "1-component moisture-reactive",
+                "22x expansion factor",
+                ">10% elongation",
+                "EN 1504-5 compliant",
+                "0.3mm crack sealing",
+                "Water-bearing crack repair"
+            ],
+            applications: [
+                "Concrete crack injection",
+                "Waterproof joint sealing",
+                "Void filling",
+                "Basement/tunnel repairs"
+            ],
+            packaging: "5.3kg, 10.6kg metal containers",
+            color: "Yellowish resin",
+            specSheet: "assets/sika/RepairandProtection/rep11.pdf"
+        }
+    }
+},
 
         // 5. Building Finishing
-        buildingFinishing: {
-            name: "Building Finishing",
-            description: "Solutions for tile installation and finishing",
-            products: {
-                "sikaceram-50": {
-                    name: "SikaCeram®-50",
-                    images: [
-                    "assets/sika/BuildingFinishing/b1.png"
-                    ],
-                    description: "Cementitious adhesive for laying high absorption ceramic tiles for indoor use.",
-                    features: [
-                        "Excellent adhesion",
-                        "Good water retention",
-                        "Easy to use",
-                        "For cementitious substrates"
-                    ],
-                    applications: [
-                        "Interior floor and wall tiles",
-                        "Concrete and cement mortar substrates",
-                        "Brick substrates"
-                    ],
-                    packaging: "25 kg bags",
-                    color: "Grey powder",
-                    specSheet: "assets/sika/BuildingFinishing/b1.pdf"
-                },
-                "sikaceram-105": {
-                    name: "SikaCeram®-105",
-                    images: [
-                    "assets/sika/BuildingFinishing/b2.png"
-                    ],
-                    description: "General purpose cementitious tile adhesive for permanent fixing of tiles (C1T class).",
-                    features: [
-                        "Easy to use (just add water)",
-                        "Excellent workability",
-                        "Good pot life",
-                        "Non-toxic"
-                    ],
-                    applications: [
-                        "Wall and floor tiles",
-                        "Absorbing/non-absorbed tiles",
-                        "Interior use only"
-                    ],
-                    packaging: "25 kg bag",
-                    color: "Grey Powder",
-                    specSheet: "assets/sika/BuildingFinishing/b2.pdf"
-                },
-                "sikaceram-200": {
-                    name: "SikaCeram®-200",
-                    images: [
-                    "assets/sika/BuildingFinishing/b3.png"
-                    ],
-                    description: "Polymer modified, cement based improved adhesive for ceramic and porcelain tiles (C2 class).",
-                    features: [
-                        "Very good adhesion",
-                        "Excellent workability",
-                        "Thixotropic consistency",
-                        "No vertical slip",
-                        "Non-toxic"
-                    ],
-                    applications: [
-                        "High absorption ceramic tiles",
-                        "Large size tiles",
-                        "Wet areas and swimming pools",
-                        "Facades",
-                        "Indoor and outdoor use"
-                    ],
-                    packaging: "25 kg bag",
-                    color: "Grey Powder",
-                    specSheet: "assets/sika/BuildingFinishing/b3.pdf"
-                },
-                "sikaceram-205": {
-                    name: "SikaCeram®-205",
-                    images: [
-                    "assets/sika/BuildingFinishing/b4.png"
-                    ],
-                    description: "High performance cementitious flexible tile adhesive (C2TE class) for tropical climates.",
-                    features: [
-                        "Easy to use (just add water)",
-                        "Excellent workability",
-                        "Good pot life",
-                        "Non-toxic",
-                        "Flexible formulation"
-                    ],
-                    applications: [
-                        "Wall and floor tiles",
-                        "Absorbing/non-absorbed tiles",
-                        "Interior and exterior uses"
-                    ],
-                    packaging: "25 kg bag",
-                    color: "Grey powder",
-                    specSheet: "assets/sika/BuildingFinishing/b4.pdf"
-                },
-                "sikaceram-easy-grout": {
-                    name: "SikaCeram® Easy Grout",
-                    images: [
-                    "assets/sika/BuildingFinishing/b5.png"
-                    ],
-                    description: "Single-component, semi-flexible grout mortar for ceramic tiles (2-12mm joints).",
-                    features: [
-                        "Good adhesion to surfaces",
-                        "Water resistant",
-                        "Easy to apply",
-                        "Abrasion and frost resistant"
-                    ],
-                    applications: [
-                        "Grouting ceramic tiles",
-                        "Interior and exterior use",
-                        "Floors and walls"
-                    ],
-                    packaging: "2 kg and 5 kg bags",
-                    color: "Powder form (Grey or Off-white)",
-                    specSheet: "assets/sika/BuildingFinishing/b5.pdf"
-                }
-            }
+buildingFinishing: {
+  name: "Building Finishing",
+  description: "Solutions for tile installation and finishing",
+  products: {
+    "sikaceram-105-porcelain-ke": {
+      name: "SikaCeram®-105 Porcelain KE",
+      images: [
+        "assets/sika/BuildingFinishing/b1.png"
+      ],
+      description: "High performance polymer-modified, cement based, improved adhesive for ceramic and porcelain tiles.",
+      features: [
+        "Very good adhesion",
+        "Good bond strengths",
+        "Non-Toxic",
+        "No vertical slip, high slump resistance and grab",
+        "Suitable for all types of Ceramic and Porcelain tiles",
+        "Easy to use with excellent workability and thixotropic consistency"
+      ],
+      applications: [
+        "Bonding high absorption ceramic tiles, earthenware, extruded and refined porcelain tiles",
+        "Bonding large size tiles used in industrial environment, wet areas, swimming pools, facades",
+        "Bathrooms, kitchens, balconies, terraces, etc",
+        "Indoor and outdoor application over concrete, cement mortars, bricks and plaster",
+        "Horizontal and vertical areas",
+        "Suitable for moisture tolerant natural stone",
+        "Suitable to tile directly on various Sika waterproofing products"
+      ],
+      packaging: "20 Kg bag",
+      color: "Grey Powder",
+      specSheet: "assets/sika/BuildingFinishing/b1.pdf"
+    },
+    "sikaceram-tile-grout-ke": {
+      name: "Sika®Ceram Tile Grout KE",
+      images: [
+        "assets/sika/BuildingFinishing/b2.png"
+      ],
+      description: "Cementitious grout filler for ceramic tile joints.",
+      features: [
+        "Non-shrink and no cracks",
+        "Non-sag/ slump (thixotropic) application",
+        "Water, mildew and mold resistant",
+        "Increased strengths",
+        "Mixes with water only and easy to apply",
+        "Available in different colours (Grey, White, Beige, Brown Black, Ivory and APS)"
+      ],
+      applications: [
+        "Grout for filling installed ceramic tile joints in bathrooms",
+        "swimming pools, kitchens and all other similar applications."
+      ],
+      packaging: "3 kg bag",
+      color: "Various (Powder)",
+      specSheet: "assets/sika/BuildingFinishing/b2.pdf"
+    },
+    "sika-anchorfix-s": {
+      name: "Sika AnchorFix® S",
+      images: [
+        "assets/sika/BuildingFinishing/b3.png"
+      ],
+      description: "Styrenated polyester based 2-component anchoring adhesive.",
+      features: [
+        "Fast curing",
+        "Non-sag, even overhead",
+        "ETA for anchoring in uncracked concrete",
+        "Low wastage"
+      ],
+      applications: [
+        "As a fast curing anchoring adhesive for all grades of rebars / reinforcing steel, threaded rods, bolts and special fastening systems in concrete, hollow and solid masonry, hard natural stone*, solid rock*"
+      ],
+      packaging: "300 ml standard cartridge",
+      color: "Component A: white, Component B: black, Component A+B mixed: light grey",
+      specSheet: "assets/sika/BuildingFinishing/b3.pdf"
+    }
+  }
+},
+
+// 6. Flooring Systems
+flooringSystems: {
+  name: "Flooring Systems",
+  description: "Comprehensive flooring solutions for various applications.",
+  products: {
+    "sikafloor-3-quartztops": {
+      name: "Sikafloor®-3 QuartzTop",
+      images: [
+        "assets/sika/FlooringSystems/f1.png"
+      ],
+      description: "One-part, pre-blended, mineral dry-shake hardener with optional colouring for concrete.",
+      features: [
+        "Medium wear resistance rating",
+        "Good impact resistance",
+        "Cost-effective surface hardener",
+        "Dust-proof",
+        "Fast application",
+        "Easy to clean",
+        "Quality-assured factory blending",
+        "Wide range of colours available"
+      ],
+      applications: [
+        "Mineral dry-shake topping for monolithic floors in industrial, commercial and public buildings"
+      ],
+      packaging: "25 kg",
+      color: "Powder Natural (concrete grey). Other colours upon request.",
+      specSheet: "assets/sika/FlooringSystems/f1.pdf"
+    },
+    "esd-flooring": {
+      name: "ESD Flooring",
+      images: [
+        "assets/sika/FlooringSystems/f2.png"
+      ],
+      description: "Information about ESD (Electrostatic Discharge) flooring solutions.",
+      features: [], // No specific features provided in the description
+      applications: [], // No specific applications provided in the description
+      packaging: "", // No packaging information provided in the description
+      color: "", // No color information provided in the description
+      specSheet: "assets/FlooringSystems/f2.pdf" // Assuming f2.pdf exists
+    },
+    "sikafloor-263-sl": {
+      name: "Sikafloor®-263 SL",
+      images: [
+        "assets/sika/FlooringSystems/f3.png"
+      ],
+      description: "Two part self-smoothing, pigmented, epoxy resin for flooring application. Suitable for use in hot and tropical climatic conditions.",
+      features: [
+        "Highly fillable",
+        "Good chemical and mechanical resistance",
+        "Easy application",
+        "Liquid proof",
+        "Gloss finish",
+        "Slip resistant surface possible"
+      ],
+      applications: [
+        "Self-smoothing system for concrete and cement screeds with medium to heavy wear, e.g. for storage warehouses, assembly halls, maintenance workshops, garages and car parks, loading bays, aircraft hangars, plant rooms, clean rooms, production areas, dry food processing plants, pharmaceutical manufacturing"
+      ],
+      packaging: "Part A + B 20 kg or 25 kg ready to mix units (various sizes available)",
+      color: "Resin - Part A Coloured, liquid; Hardener - Part B Transparent, liquid (various colour shades available)",
+      specSheet: "assets/sika/FlooringSystems/f3.pdf"
+    },
+    "sikafloor-purcem-hm-20": {
+      name: "Sikafloor® PurCem® HM-20",
+      images: [
+        "assets/sika/FlooringSystems/f4.png"
+      ],
+      description: "High strength-trowel grade, heavy duty polyurethane cement hybrid flooring system. Suitable for floors subject to heavy loading, abrasion and chemical exposure.",
+      features: [
+        "Good resistance to fire",
+        "Steam cleanable at 9 mm thick",
+        "High mechanical and abrasion resistance",
+        "Easy to clean and maintain",
+        "Seamless, non-taint, odourless",
+        "Smooth, matt surface",
+        "Tolerant to moisture in the substrate",
+        "Very good life cycle cost performance",
+        "High chemical resistance",
+        "Easy application"
+      ],
+      applications: [
+        "Chemical plants",
+        "Laboratories",
+        "Workshops",
+        "Food processing plants, in wet or dry process areas, freezers and coolers, thermal shock areas"
+      ],
+      packaging: "Please refer to the individual Product Data Sheet",
+      color: "Beige, maize yellow, oxide red, grass green, dusty grey, slate grey, traffic grey (Textured surface, matt finish)",
+      specSheet: "assets/sika/FlooringSystems/f4.pdf"
+    },
+    "sika-ucrete-mf": {
+      name: "Sika® Ucrete® MF",
+      images: [
+        "assets/sika/FlooringSystems/f5.png"
+      ],
+      description: "4-6mm Heavy duty polyurethane floor finish with exceptional resistance to aggressive chemicals. Provides a smooth protective floor finish suitable for applications in predominantly dry environments.",
+      features: [
+        "Exceptional resistance to aggressive chemicals",
+        "Smooth protective floor finish",
+        "Suitable for food, pharmaceutical and manufacturing industries",
+        "Very low emissions (Indoor Air Comfort Gold Label)",
+        "Resistant to liquid spillage up to 60°C",
+        "Suitable for freezer temperatures down to -18°C",
+        "Non-tainting",
+        "High mechanical strengths and resilient to severe impact loads",
+        "Zero absorption"
+      ],
+      applications: [
+        "Food industry",
+        "Pharmaceutical industry",
+        "Manufacturing industries including clean rooms, laboratories, packing halls and warehouses"
+      ],
+      packaging: "Part A+B+C+D 20.28 kg/set (various components with different packaging sizes)",
+      color: "Available in eight standard colours: Red, Yellow, Green, Orange, Grey, Cream, Blue and Green/Brown.",
+      specSheet: "assets/sika/FlooringSystems/f5.pdf"
+    }
+  }
+},
+        // 6. Sealing and Bonding
+sealingAndBonding: {
+    name: "Sealing and Bonding",
+    description: "High-performance sealants and adhesives for construction, industrial, and fire protection applications",
+    products: {
+        // Existing products (j1-j5)
+        "sikaflex-construction": { // j1
+            name: "Sikaflex® Construction",
+            images: ["assets/sika/SealingAndBonding/j1.png"],
+            description: "One-component, moisture-curing elastic joint sealant for movement and connection joints on porous substrates.",
+            features: [
+                "Fast-curing & bubble-free",
+                "Non-sag application",
+                "Overpaintable",
+                "±25% movement capability",
+                "ISO 11600 F 25 HM compliant",
+                "Excellent weather resistance"
+            ],
+            applications: [
+                "Building facade joints",
+                "Door/window perimeters",
+                "Concrete expansion joints",
+                "Outdoor sealing applications"
+            ],
+            packaging: "600ml sausages (20/box)",
+            color: "White, Concrete Grey",
+            specSheet: "assets/sika/SealingAndBonding/j1.pdf"
+        },
+        "sikaflex-11-fc-purform": { // j2
+            name: "Sikaflex®-11 FC Purform",
+            images: ["assets/sika/SealingAndBonding/j2.png"],
+            description: "Multipurpose elastic adhesive and joint sealant with very low monomer content (<0.1%) for interior/exterior use.",
+            features: [
+                "CE marked to EN 15651",
+                "LEED v4 compliant",
+                "Class A+ VOC emissions",
+                "Bonds concrete/masonry/metal",
+                "±25% movement capability",
+                "No diisocyanate training required"
+            ],
+            applications: [
+                "Bonding construction components",
+                "Vertical/horizontal joint sealing",
+                "Sanitary area joints",
+                "Pedestrian walkways"
+            ],
+            packaging: "300ml cartridges (12/box), 600ml foil packs (20/box)",
+            color: "White, black, grey, brown, beige",
+            specSheet: "assets/sika/SealingAndBonding/j2.pdf"
+        },
+        "sikaflex-pro-3-purform": { // j3
+            name: "Sikaflex® PRO-3 Purform®",
+            images: ["assets/sika/SealingAndBonding/j3.png"],
+            description: "Tamper-resistant polyurethane sealant for floor joints and civil engineering with ±25-50% movement capability.",
+            features: [
+                "Anti-pick/vandal-resistant",
+                "ASTM C719 Class 50",
+                "Chemical/weather resistant",
+                "Bubble-free curing",
+                "Food industry approved",
+                "<0.1% monomer content"
+            ],
+            applications: [
+                "Food processing floors",
+                "Car park decks/tunnels",
+                "Secure facilities (prisons)",
+                "Wastewater treatment plants"
+            ],
+            packaging: "300ml cartridges (12/box), 600ml foil packs (20/box)",
+            color: "Multiple colors available",
+            specSheet: "assets/sika/SealingAndBonding/j3.pdf"
+        },
+        "sikaflex-tank-n": { // j4
+            name: "Sikaflex® Tank N",
+            images: ["assets/sika/SealingAndBonding/j4.png"],
+            description: "Chemical-resistant elastic sealant for joints exposed to fuels, oils, and water-polluting liquids.",
+            features: [
+                "ETA-09/0272 approved",
+                "Resists petrol/diesel/oils",
+                "±25% movement capability",
+                "LEED v3 compliant",
+                "High mechanical resistance",
+                "For professional use only"
+            ],
+            applications: [
+                "Petrol station floors",
+                "Chemical storage tanks",
+                "Containment bunds",
+                "Parking garage joints"
+            ],
+            packaging: "600ml foil packs (20/box)",
+            color: "Concrete grey, black",
+            specSheet: "assets/sika/SealingAndBonding/j4.pdf"
+        },
+        "sika-boom": { // j5
+            name: "Sika Boom®",
+            images: ["assets/sika/SealingAndBonding/j5.png"],
+            description: "One-component polyurethane expanding foam for sealing gaps, cracks, and penetrations.",
+            features: [
+                "Expands 2-3x original size",
+                "Tack-free in 5 minutes",
+                "Sandable/paintable",
+                "ASTM E84 fire rated",
+                "Adheres to most materials",
+                "-29°C to +93°C service range"
+            ],
+            applications: [
+                "Utility panel sealing",
+                "Pipe/duct penetrations",
+                "Base plate insulation",
+                "Exterior crack filling"
+            ],
+            packaging: "12oz cans (12/carton), 20oz cans (12/carton)",
+            color: "Light yellow foam",
+            specSheet: "assets/sika/SealingAndBonding/j5.pdf"
         },
 
-        // 6. Joint Sealing
-        jointSealing: {
-            name: "Joint Sealing",
-            description: "High-performance sealants for various applications",
-            products: {
-                "sika-sanisil": {
-                    name: "Sika® Sanisil®",
-                    images: [
-                    "assets/sika/JointSealing/j1.png"
-                    ],
-                    description: "1-component, solvent-free sealant with fungus resistance for sanitary applications.",
-                    features: [
-                        "High elasticity and flexibility",
-                        "Mildew resistance",
-                        "UV and weathering resistant"
-                    ],
-                    applications: [
-                        "Sanitary sealing",
-                        "Areas requiring mildew resistance"
-                    ],
-                    packaging: "300 ml cartridges",
-                    color: "Translucent, white and black",
-                    specSheet: "assets/sika/RoofingSolutions/j1.pdf"
-                }
-            }
+        // New products (j6-j8)
+        "sika-primer-3n": { // j6
+            name: "Sika® Primer-3 N",
+            images: ["assets/sika/SealingAndBonding/j6.png"],
+            description: "Solvent-based primer for Sikaflex®, SikaHyflex®, and Sikasil® products on porous substrates.",
+            features: [
+                "Short flash-off time (<30 min)",
+                "LEED® EQc 4.1 compliant",
+                "VOC content <700 g/l",
+                "Water repellent",
+                "For concrete/GRC/metal",
+                "Easy brush/roller application"
+            ],
+            applications: [
+                "Pre-treatment for sealants",
+                "Concrete/metal bonding prep",
+                "GRP/GRC surface preparation",
+                "Outdoor adhesive applications"
+            ],
+            packaging: "1L bottles (4/box)",
+            color: "Transparent",
+            specSheet: "assets/sika/SealingAndBonding/j6.pdf"
         },
+        "sikaflex-406-kc": { // j7
+            name: "Sikaflex®-406 KC",
+            images: ["assets/sika/SealingAndBonding/j7.png"],
+            description: "Self-leveling polyurethane sealant with booster accelerator for high-traffic joints.",
+            features: [
+                "±25% movement capability",
+                "Traffic-ready in 3 hours",
+                "Resists diesel/jet fuel",
+                "CE marked to EN 15651-4",
+                "i-Cure® booster technology",
+                "For recessed/broadcast joints"
+            ],
+            applications: [
+                "Rail track joints",
+                "Airport pavements",
+                "Road expansion joints",
+                "Industrial flooring systems"
+            ],
+            packaging: "10L containers + 150ml booster packs (45/box)",
+            color: "Black, concrete grey",
+            specSheet: "assets/sika/SealingAndBonding/j7.pdf"
+        },
+        "sika-firestop": { // j8
+            name: "Sika® FireStop",
+            images: ["assets/sika/SealingAndBonding/j8.png"],
+            description: "Intumescent inorganic silicate sealant for fire-rated joints and penetrations.",
+            features: [
+                "Withstands +1000°C",
+                "BS 476 Part 4 compliant",
+                "Expands at +250°C",
+                "Non-combustible",
+                "Fume-free in fire",
+                "Shore D 50 hardness"
+            ],
+            applications: [
+                "Fire door seals",
+                "Chimney/stove pipe seals",
+                "Safes/vault joints",
+                "Ventilation fire barriers"
+            ],
+            packaging: "300ml cartridges",
+            color: "Black",
+            specSheet: "assets/sika/SealingAndBonding/j8.pdf"
+        }
+    }
+},
     },
 
         allProducts: {
