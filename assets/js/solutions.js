@@ -1124,185 +1124,163 @@ sealingAndBonding: {
 },
     },
 
-        allProducts: {
+       allProducts: {
     // Concrete Admixtures
-    "sika-plastiment-201-ae": {
-        name: "Sika® Plastiment®-201 AE",
+    "sikament-nng": {
+        name: "Sikament® NNG",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "Water reducing and retarding concrete admixture that slows cement hydration, delaying initial set while maintaining accelerated hardening rate. Suitable for hot and tropical climates.",
+        images: ["assets/sika/ConcreteAdmixtures/c1.png"],
+        description: "Superplasticizer/high range water-reducer for free flowing and high strength concrete, especially effective in hot climates.",
         features: [
-            "Controlled setting times",
-            "Increased setting time in hot weather",
-            "Accelerated hardening after setting",
-            "Improved workability without increased water content",
-            "Reduced water content without loss of workability",
-            "Increased strengths",
-            "Reduced shrinkage and creep",
-            "Superior surface finish",
+            "Up to 25% water reduction",
+            "Excellent slump retention",
+            "Improved workability and placement",
+            "Enhanced final strengths",
+            "Reduced permeability",
             "Chloride-free formulation"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c1.pdf"
     },
-    "sikament-340": {
-        name: "Sikament®-340",
+    "sika-visco-crete-20-he": {
+        name: "Sika® ViscoCrete®-20 HE",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "Liquid superplasticizer retarder admixture composed of polymer sulfonates for extended concrete workability. Recommended for summer climate.",
+        images: ["assets/sika/ConcreteAdmixtures/c2.png"],
+        description: "High range water reducer/superplasticizer for concrete requiring high early strength and flowability in tropical climates.",
         features: [
-            "15-20% water reduction",
-            "Considerable improvement of workability",
-            "More homogeneous mix of components",
-            "Increased compressive strength",
-            "Reduction in shrinkage and fluage effect",
-            "Long lasting durability",
-            "Chloride-free"
+            "High water reduction (up to 30%)",
+            "Accelerated strength development",
+            "Improved flowability and compaction",
+            "Reduced shrinkage and creep",
+            "Enhanced surface finish",
+            "ASTM C494 Type G compliant"
         ],
-        specSheet: "pdf/sikament-340-spec-sheet.pdf"
+        specSheet: "assets/sika/ConcreteAdmixtures/c2.pdf"
     },
-    "sikament-nn": {
-        name: "Sikament® NN",
+    "sika-visco-crete-90-he": {
+        name: "Sika® ViscoCrete®-90 HE",
         solution: "Concrete Admixtures",
         images: ["assets/sika/ConcreteAdmixtures/c3.png"],
-        description: "High range water reducer/superplasticizer admixture especially suitable for free flowing and high strength concrete in hot climates.",
+        description: "Third generation accelerated superplasticizer for precast concrete with powerful water reduction and excellent flowability.",
         features: [
-            "Up to 25% water reduction",
-            "Improved workability and placement",
-            "Excellent for congested reinforcement",
-            "Improved cohesion reducing segregation risk",
-            "Pronounced increase of final strength",
-            "Reduced permeability"
+            "Extremely high water reduction",
+            "Excellent early strength development",
+            "Improved freeze-thaw resistance",
+            "Reduced energy for steam curing",
+            "EN 934-2 compliant",
+            "Chloride and alkali free"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c3.pdf"
     },
-    "sikament-nng": {
-        name: "Sikament® NNG",
+    "sika-visco-crete-3088": {
+        name: "Sika® ViscoCrete®-3088",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "Superplasticizer/high range water-reducer and retarding admixture for free flowing and high strength concrete in hot climates.",
+        images: ["assets/sika/ConcreteAdmixtures/c4.png"],
+        description: "High range water reducing admixture with retarding properties for extended workability and long transport times.",
         features: [
-            "Up to 25% water reduction",
-            "Greatly improved workability",
-            "Good slump keeping properties",
-            "Easy placing with less vibration needed",
-            "Pronounced increase of final strengths",
-            "Reduced permeability"
+            "Up to 30% water reduction",
+            "Extended workability retention",
+            "Improved concrete density",
+            "Reduced carbonation rate",
+            "EN 934-2 compliant",
+            "Non-corrosive to reinforcement"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c4.pdf"
     },
-    "sika-visco-crete-20-et": {
-        name: "Sika® ViscoCrete®-20 ET",
+    "sika-paver-2-hc-ke": {
+        name: "SikaPaver®-2 HC KE",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "High range water reducer/superplasticizer and retarding admixture for concrete requiring high early strength and flowability in tropical/hot climates.",
+        images: ["assets/sika/ConcreteAdmixtures/c5.png"],
+        description: "High performance compaction aid for semi-dry/no-slump concrete products requiring instant demolding.",
         features: [
-            "High water reduction",
-            "High final density and strength",
-            "Reduced shrinkage and creep",
-            "Improved flowability and compacting",
-            "Improved surface finish",
-            "Early strength development",
-            "Chloride-free"
+            "Improved mold filling",
+            "Enhanced surface finish",
+            "Increased green strength",
+            "Reduced product variation",
+            "EN 934-2 compliant",
+            "Optimized compaction process"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c5.pdf"
     },
-    "sika-1-concrete": {
-        name: "Sika®-1",
+    "sika-fiber": {
+        name: "Sika Fiber®",
         solution: "Concrete Admixtures",
         images: ["assets/sika/ConcreteAdmixtures/c6.png"],
-        description: "Normal setting liquid waterproofing admixture for mortar and concrete that blocks capillaries and pores.",
+        description: "Monofilament polypropylene fibers for reducing plastic shrinkage cracking and enhancing concrete durability.",
         features: [
-            "Increased impermeability",
-            "Waterproof but vapor permeable",
-            "Ready to use",
-            "Easily dispersed",
-            "Chloride-free",
-            "Non-toxic"
+            "Reduces plastic shrinkage cracks",
+            "Improves freeze-thaw resistance",
+            "Reduces explosive spalling in fire",
+            "ASTM C-1116 compliant",
+            "Available in multiple lengths",
+            "Non-corrosive and alkali resistant"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c6.pdf"
     },
-    "sikacontrol-100-wt-et": {
-        name: "SikaControl®-100 WT ET",
+    "sika-antisol-wb": {
+        name: "Sika® Antisol® WB",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "Liquid water resisting admixture that reduces concrete permeability through crystallization technology.",
+        images: ["assets/sika/ConcreteAdmixtures/c7.png"],
+        description: "Water-based curing compound, primer and sealer for freshly laid concrete in hot climates.",
         features: [
-            "Produces watertight concrete",
-            "Chlorine free",
-            "No impact on setting time",
-            "No effect on mechanical resistance",
-            "Blocks capillaries through crystallization"
+            "Reduces plastic cracking",
+            "ASTM C 309 Type 1 compliant",
+            "Non-flammable and non-toxic",
+            "Acts as primer for coatings",
+            "Reduces dusting and water loss",
+            "Improves surface hardness"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c7.pdf"
     },
-    "sikatard-et": {
-        name: "SikaTard® ET",
+    "sika-separol-gu": {
+        name: "Sika® Separol® GU",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "Set-retarding admixture for all types of concrete, screeds or mortars. Complies with ASTM C 494 type B.",
+        images: ["assets/sika/ConcreteAdmixtures/c8.png"],
+        description: "Oil-based form release agent for clean demolding and high-quality concrete surface finishes.",
         features: [
-            "Improves workability with reduced water",
-            "Delays setting times",
-            "Preserves fluidity during placement",
-            "Delays heat release from hydration",
-            "Improves mechanical strengths",
-            "Increases compactness and watertightness",
-            "Reduces shrinkage and creeping"
+            "Suitable for all formwork materials",
+            "Easy clean striking",
+            "Improved surface finish",
+            "Reduces concrete contamination",
+            "Economical coverage rates",
+            "Non-staining"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c8.pdf"
     },
-    "plastiretard": {
-        name: "Plastiretard",
+    "sikacontrol-110-wt-ke": {
+        name: "SikaControl®-110 WT KE",
         solution: "Concrete Admixtures",
-        images: [],
-        description: "Set-retarding admixture that can behave as water-reducer when used in certain proportions.",
+        images: ["assets/sika/ConcreteAdmixtures/c9.png"],
+        description: "Liquid mass water repellent that forms crystallization to waterproof concrete structures.",
         features: [
-            "Improves workability with reduced water",
-            "Delays setting times",
-            "Preserves fluidity during placement",
-            "Delays heat release from hydration",
-            "Improves mechanical strengths",
-            "Increases compactness and watertightness",
-            "Reduces shrinkage and creeping"
+            "Forms waterproof crystallization",
+            "Chloride-free formulation",
+            "No impact on setting time",
+            "Resists aggressive waters",
+            "EN 934-2 compliant",
+            "Improves durability"
         ],
         specSheet: "assets/sika/ConcreteAdmixtures/c9.pdf"
     },
-    "sika-sigunit-l": {
-        name: "Sika® Sigunit® L",
-        solution: "Concrete Admixtures",
-        images: [],
-        description: "Liquid shotcrete accelerating admixture for wet spray process with momentary gluing effect.",
-        features: [
-            "Increased internal cohesion and adhesion",
-            "Thick layers in one application",
-            "Improved overhead application",
-            "High strength dense shotcrete",
-            "Reduces rebound and dust",
-            "Chloride free",
-            "Improves watertightness"
-        ],
-        specSheet: "assets/sika/ConcreteAdmixtures/c10.pdf"
-    },
-    "sika-sigunit-l-89-af": {
-        name: "Sika® Sigunit® L-89 AF",
-        solution: "Concrete Admixtures",
-        images: [],
-        description: "Highly effective, alkali-free accelerating admixture for wet and dry sprayed concrete with rapid strength development.",
-        features: [
-            "Rapid mechanical strength development",
-            "Reduces concrete rebound",
-            "Improves overhead application",
-            "Alkali and chloride free",
-            "Short setting times"
-        ],
-        specSheet: "assets/sika/ConcreteAdmixtures/c11.pdf"
-    },
 
     // Waterproofing Solutions
+    "sikalite": {
+        name: "Sikalite®",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w1.png"],
+        description: "Powdered waterproofing admixture for mortar that blocks capillaries and pores in Portland cement/sand mortars preventing moisture movement.",
+        features: [
+            "Easy to use",
+            "Economical",
+            "Convenient powdered form",
+            "Watertight but vapour permeable",
+            "Chloride free"
+        ],
+        specSheet: "assets/sika/WaterproofingSolutions/w1.pdf"
+    },
     "sika-cemflex": {
         name: "Sika® Cemflex®",
         solution: "Waterproofing Solutions",
-        images: ["assets/sika/WaterproofingSolutions/w1.png"],
+        images: ["assets/sika/WaterproofingSolutions/w2.png"],
         description: "Universal waterproofing and bonding agent that improves water resistance and adhesion of Portland cement based composites.",
         features: [
             "Watertight",
@@ -1312,213 +1290,569 @@ sealingAndBonding: {
             "Oil resistant",
             "UV stable"
         ],
-        specSheet: "assets/sika/WaterproofingSolutions/w1.pdf"
+        specSheet: "assets/sika/WaterproofingSolutions/w2.pdf"
     },
-    "sikaseal-105": {
-        name: "SikaSeal®-105",
+    "sikatop-105-seal-ke": {
+        name: "SikaTop®-105 Seal KE",
         solution: "Waterproofing Solutions",
-        images: ["assets/sika/WaterproofingSolutions/w2.png"],
-        description: "Cement based, polymer modified, 2-component multipurpose waterproofing slurry.",
+        images: ["assets/sika/WaterproofingSolutions/w3.png"],
+        description: "Cement based, polymer modified, 2-component multipurpose waterproofing slurry with crystallization action and pore blocking effect.",
         features: [
             "Impermeable",
             "Brush, trowel or spray applied",
             "Good adhesion to substrates",
-            "Non-toxic",
+            "Pre-batched components",
             "Works against positive/negative water pressure"
-        ],
-        specSheet: "assets/sika/WaterproofingSolutions/w2.pdf"
-    },
-    "super-sikalite": {
-        name: "Super Sikalite®",
-        solution: "Waterproofing Solutions",
-        images: ["assets/sika/WaterproofingSolutions/w4.png"],
-        description: "Powdered waterproofing admixture that blocks capillaries in Portland cement/sand mortars.",
-        features: [
-            "Easy to use",
-            "Economical",
-            "Convenient powdered form",
-            "Watertight but vapor permeable",
-            "Chloride free"
-        ],
-        specSheet: "assets/sika/ConcreteAdmixtures/c11.pdf"
-    },
-    "sika-1-waterproofing": {
-        name: "Sika®-1",
-        solution: "Waterproofing Solutions",
-        images: ["assets/sika/WaterproofingSolutions/w3.png"],
-        description: "Normal setting liquid waterproofing admixture for mortar and concrete.",
-        features: [
-            "Blocks capillaries and pores",
-            "Waterproof but vapor permeable",
-            "Ready to use",
-            "Easily dispersed",
-            "Chloride-free",
-            "Non-toxic"
         ],
         specSheet: "assets/sika/WaterproofingSolutions/w3.pdf"
     },
-    "sika-proof-membrane": {
-        name: "SikaProof® Membrane",
+    "sikatop-seal-107-ke": {
+        name: "SikaTop® Seal-107 KE",
         solution: "Waterproofing Solutions",
-        images: [
-            "https://www.sika.com/content/dam/dms/si01/sika_proof_membrane_-a.png",
-            "https://www.sika.com/content/dam/dms/si01/sika_proof_membrane_-b.png"
-        ],
-        description: "SikaProof® is a fully bonded, dual-side coated, reinforced waterproofing membrane with a non-woven fleece on both sides.",
+        images: ["assets/sika/WaterproofingSolutions/w4.png"],
+        description: "Two part polymer modified cementitious waterproof mortar slurry that is slightly flexible to tolerate fine cracks.",
         features: [
-            "Fully bonded waterproofing system",
-            "Dual protection with coating on both sides",
-            "High puncture resistance",
-            "Excellent crack bridging capability"
+            "Easy to apply by brush or trowel",
+            "No water required",
+            "Very good adhesion",
+            "Protects against water penetration",
+            "Non-corrosive to steel",
+            "Overpaintable"
         ],
-        specSheet: "pdf/sika-proof-membrane-spec-sheet.pdf"
+        specSheet: "assets/sika/WaterproofingSolutions/w4.pdf"
     },
-    "sika-igolflex": {
-        name: "Sika® Igolflex",
+    "sikatop-130-flex-ke": {
+        name: "SikaTop®-130 Flex KE",
         solution: "Waterproofing Solutions",
-        images: [
-            "https://www.sika.com/content/dam/dms/si01/sikalastic_-igolflex.png"
-        ],
-        description: "Sika® Igolflex is a high-performance, elastic, one-component polyurethane waterproofing membrane.",
+        images: ["assets/sika/WaterproofingSolutions/w5.png"],
+        description: "2-component flexible waterproofing mortar with selected aggregates and modified polymers for surfaces requiring crack bridging.",
         features: [
-            "Excellent UV resistance",
-            "Highly elastic and durable",
-            "Seamless application",
-            "Suitable for foot traffic"
+            "Waterproof and water vapour permeable",
+            "Good crack bridging properties",
+            "Low modulus of elasticity",
+            "Excellent adhesion",
+            "Resistant to de-icing salts",
+            "Approved for drinking water contact"
         ],
-        specSheet: "pdf/sika-igolflex-spec-sheet.pdf"
+        specSheet: "assets/sika/WaterproofingSolutions/w5.pdf"
     },
-
-    // Roofing Solutions
-    "sealoflex-professional": {
-        name: "Sealoflex Professional",
-        solution: "Roofing Solutions",
-        images: ["assets/sika/RoofingSolutions/w3.pdf"],
-        description: "Single component, acrylic based, flexible waterproofing compound with fiber reinforcement.",
+    "sikabit-pro-p45": {
+        name: "SikaBit® PRO P-45 G-0 MG",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w6.png"],
+        description: "APP modified, bituminous, torch-applied waterproofing membrane reinforced with non-woven polyester.",
         features: [
-            "Ready to use",
-            "Fiber reinforced",
-            "Flexible and durable",
-            "Good adhesion to roofing substrates",
-            "Can be overcoated with acrylic paint"
+            "Good watertightness",
+            "Excellent elongation",
+            "Cold flexible",
+            "Good mechanical properties",
+            "Easy torch installation",
+            "Mineral granule surface"
         ],
-        specSheet: "assets/sika/RoofingSolutions/r1.pdf"
+        specSheet: "assets/sika/WaterproofingSolutions/w6.pdf"
     },
-    "sika-cemflex-roofing": {
-        name: "Sika® Cemflex®",
-        solution: "Roofing Solutions",
-        images: ["assets/sika/RoofingSolutions/r2.png"],
-        description: "Universal waterproofing and bonding agent for roofing applications.",
+    "sika-wp-shield-primer": {
+        name: "Sika® WP Shield Primer",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w7.png"],
+        description: "Water based modified bituminous primer for improved adhesion of bituminous sheet membranes.",
         features: [
-            "Watertight",
-            "Good abrasion resistance",
+            "Bonds well with old bituminous substrates",
+            "Excellent concrete adhesion",
+            "Easy brush, spray or roller application",
+            "Specially designed for tropical conditions",
+            "Surface activator for membranes"
+        ],
+        specSheet: "assets/sika/WaterproofingSolutions/w7.pdf"
+    },
+    "sika-waterbar-dr-eg": {
+        name: "Sika Waterbar® DR EG",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w8.png"],
+        description: "PVC-P external waterbars for sealing expansion joints in watertight concrete structures.",
+        features: [
+            "High tensile strength and elongation",
+            "Permanent flexibility",
+            "Resists medium hydrostatic pressure",
+            "Resistant to aggressive ground conditions",
+            "Weldable for continuous protection"
+        ],
+        specSheet: "assets/sika/WaterproofingSolutions/w8.pdf"
+    },
+    "sika-raintite": {
+        name: "Sika® RainTite",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w9.png"],
+        description: "Acrylic waterproofing system combining flexible UV-resistant emulsion with polyester membrane.",
+        features: [
+            "External weather & UV resistant",
+            "Excellent adhesion",
+            "High flexibility",
             "Non-toxic",
-            "Oil resistant",
-            "UV stable"
+            "Fungal growth resistant",
+            "Available in multiple colors"
         ],
-        specSheet: "assets/sika/RoofingSolutions/r2.pdf"
+        specSheet: "assets/sika/WaterproofingSolutions/w9.pdf"
+    },
+    "sika-raintite-plus": {
+        name: "Sika® RainTite Plus",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w10.png"],
+        description: "Enhanced acrylic waterproofing system with improved UV resistance and flexibility for demanding applications.",
+        features: [
+            "Advanced UV resistance",
+            "Higher flexibility than standard RainTite",
+            "Seamless membrane application",
+            "Non-toxic and environmentally friendly",
+            "Available in 8 standard colors",
+            "3000+ hours artificial weathering resistance"
+        ],
+        specSheet: "assets/sika/WaterproofingSolutions/w10.pdf"
+    },
+    "sikaswell-s2": {
+        name: "SikaSwell® S-2",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w11.png"],
+        description: "Polyurethane hydrophilic swellable sealant that expands in contact with water to seal construction joints and penetrations.",
+        features: [
+            "1-part, easy application",
+            "Highly economical sealing solution",
+            "Optimized expansion rate",
+            "Permanently water resistant",
+            "Good adhesion to various substrates",
+            "No damage to fresh concrete"
+        ],
+        specSheet: "assets/sika/WaterproofingSolutions/w11.pdf"
+    },
+    "sikalastic-560-gcc": {
+        name: "Sikalastic®-560 GCC",
+        solution: "Waterproofing Solutions",
+        images: ["assets/sika/WaterproofingSolutions/w12.png"],
+        description: "Eco-friendly liquid applied roof waterproofing solution based on Sika Co-Elastic Technology (CET) for hot climates.",
+        features: [
+            "Highly elastic and crack-bridging",
+            "UV resistant and weatherproof",
+            "Water-based and VOC compliant",
+            "Cold-applied (no heat/flame required)",
+            "LEED and Estidama compliant",
+            "Solar reflective (SRI ≥ 90)"
+        ],
+        specSheet: "assets/sika/WaterproofingSolutions/w12.pdf"
     },
 
-    // Grouting & Fixing
+    // Repair and Protection
+    "sikalatex": {
+        name: "SikaLatex®",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep1.png"],
+        description: "Synthetic rubber emulsion used as admixture for cementitious bonding bridges and high-quality site-mix mortars.",
+        features: [
+            "Increases adhesion strength",
+            "Reduces shrinkage and cracking",
+            "Improves abrasion resistance",
+            "Low chloride content (<0.1%)",
+            "Al Sa'fat certified (Dubai Green Building)",
+            "Suitable for hot climates"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep1.pdf"
+    },
+    "sika-monotop-610": {
+        name: "Sika MonoTop®-610",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep2.png"],
+        description: "Cementitious bonding primer and reinforcement corrosion protection slurry containing silica fume.",
+        features: [
+            "Easy mix (just add water)",
+            "Good chloride penetration resistance",
+            "Brush or spray application",
+            "2MPa tensile adhesion strength",
+            "30MPa compressive strength (28 days)",
+            "EN 1504-3 compliant"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep2.pdf"
+    },
+    "sika-monotop-412s": {
+        name: "Sika MonoTop®-412 S",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep3.png"],
+        description: "Fiber-reinforced, low-shrinkage structural repair mortar meeting EN 1504-3 Class R4 requirements.",
+        features: [
+            "Up to 50mm application thickness",
+            "A1 fire rating",
+            "Sulfate resistant",
+            "45MPa compressive strength",
+            "No bonding primer required",
+            "Machine/hand application"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep3.pdf"
+    },
+    "sika-monotop-620": {
+        name: "Sika MonoTop®-620",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep4.png"],
+        description: "Polymer-modified surfacing mortar for pore sealing and levelling (EN 1504-3 Class R3).",
+        features: [
+            "1.5-5mm application thickness",
+            "30-35MPa compressive strength",
+            "Low shrinkage behavior",
+            "A1 fire rating",
+            "No primer required",
+            "Vertical/horizontal application"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep4.pdf"
+    },
     "sikagrout-212": {
         name: "SikaGrout®-212",
-        solution: "Grouting & Fixing",
-        images: ["assets/sika/Grouting&Fixing/g1.png"],
-        description: "1-component, ready to mix, free flowing, shrinkage compensated cementitious grout.",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep5.png"],
+        description: "High-strength, shrinkage-compensated cementitious grout for general purpose applications.",
         features: [
-            "Easy to use",
-            "Shrinkage compensated",
-            "Good flow characteristics",
-            "Rapid strength development",
+            "Free-flowing consistency",
+            "95MPa compressive strength",
+            "No segregation/bleeding",
+            "Pumpable",
             "Non-corrosive",
-            "Can be pumped or poured"
+            "10-100mm thickness range"
         ],
-        specSheet: "assets/sika/Grouting&Fixing/g1.pdf"
+        specSheet: "assets/sika/RepairandProtection/rep5.pdf"
+    },
+    "sikagrout-217": {
+        name: "SikaGrout®-217",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep6.png"],
+        description: "High-performance grout for precision applications with controlled expansion system.",
+        features: [
+            "60MPa compressive strength",
+            "Shrinkage-compensated",
+            "Vibration resistant",
+            "Chloride-free",
+            "EN 1504-3 Class R4",
+            "10-150mm thickness"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep6.pdf"
+    },
+    "sikagrout-340-ke": {
+        name: "SikaGrout®-340 KE",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep7.png"],
+        description: "High-strength engineering grout with 105MPa compressive strength and pumpability.",
+        features: [
+            "Early strength development",
+            "300mm maximum thickness",
+            "Shrinkage compensated",
+            "No bleeding",
+            "Long-distance pumping",
+            "12% water mixing ratio"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep7.pdf"
+    },
+    "sikadur-31-cf-slow": {
+        name: "Sikadur®-31 CF Slow",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep8.png"],
+        description: "Thixotropic epoxy adhesive for structural bonding and repairs in hot climates (25-45°C).",
+        features: [
+            "57MPa compressive strength",
+            "Non-sag vertical application",
+            "Shrinkage-free",
+            "ASTM C881 Type I Grade 3",
+            "Moisture tolerant",
+            "Al Sa'fat certified"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep8.pdf"
+    },
+    "sikagard-pw": {
+        name: "Sikagard® PW",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep9.png"],
+        description: "Chemical-resistant epoxy coating for concrete and steel protection in aggressive environments.",
+        features: [
+            "Potable water contact approved",
+            "High-build (200μm/layer)",
+            "Sewage resistant",
+            "Glossy easy-clean finish",
+            "1.5MPa tensile adhesion",
+            "Al Sa'fat certified"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep9.pdf"
+    },
+    "sikagard-701w": {
+        name: "Sikagard®-701 W",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep10.png"],
+        description: "Water-repellent micro-emulsion impregnation for mineral substrates.",
+        features: [
+            "Water-dilutable concentrate",
+            "Maintains vapor permeability",
+            "Reduces salt absorption",
+            "Non-film forming",
+            "Deep penetration",
+            "Low VOC"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep10.pdf"
+    },
+    "sika-injection-107": {
+        name: "Sika® Injection-107",
+        solution: "Repair and Protection",
+        images: ["assets/sika/RepairandProtection/rep11.png"],
+        description: "Polyurethane foaming injection resin for permanent watertight sealing of cracks.",
+        features: [
+            "1-component moisture-reactive",
+            "22x expansion factor",
+            ">10% elongation",
+            "EN 1504-5 compliant",
+            "0.3mm crack sealing",
+            "Water-bearing crack repair"
+        ],
+        specSheet: "assets/sika/RepairandProtection/rep11.pdf"
     },
 
     // Building Finishing
-    "sikaceram-50": {
-        name: "SikaCeram®-50",
+    "sikaceram-105-porcelain-ke": {
+        name: "SikaCeram®-105 Porcelain KE",
         solution: "Building Finishing",
         images: ["assets/sika/BuildingFinishing/b1.png"],
-        description: "Cementitious adhesive for laying high absorption ceramic tiles for indoor use.",
+        description: "High performance polymer-modified, cement based, improved adhesive for ceramic and porcelain tiles.",
         features: [
-            "Excellent adhesion",
-            "Good water retention",
-            "Easy to use",
-            "For cementitious substrates"
+            "Very good adhesion",
+            "Good bond strengths",
+            "Non-Toxic",
+            "No vertical slip, high slump resistance and grab",
+            "Suitable for all types of Ceramic and Porcelain tiles",
+            "Easy to use with excellent workability and thixotropic consistency"
         ],
         specSheet: "assets/sika/BuildingFinishing/b1.pdf"
     },
-    "sikaceram-105": {
-        name: "SikaCeram®-105",
+    "sikaceram-tile-grout-ke": {
+        name: "Sika®Ceram Tile Grout KE",
         solution: "Building Finishing",
         images: ["assets/sika/BuildingFinishing/b2.png"],
-        description: "General purpose cementitious tile adhesive for permanent fixing of tiles (C1T class).",
+        description: "Cementitious grout filler for ceramic tile joints.",
         features: [
-            "Easy to use (just add water)",
-            "Excellent workability",
-            "Good pot life",
-            "Non-toxic"
+            "Non-shrink and no cracks",
+            "Non-sag/ slump (thixotropic) application",
+            "Water, mildew and mold resistant",
+            "Increased strengths",
+            "Mixes with water only and easy to apply",
+            "Available in different colours"
         ],
         specSheet: "assets/sika/BuildingFinishing/b2.pdf"
     },
-    "sikaceram-200": {
-        name: "SikaCeram®-200",
+    "sika-anchorfix-s": {
+        name: "Sika AnchorFix® S",
         solution: "Building Finishing",
         images: ["assets/sika/BuildingFinishing/b3.png"],
-        description: "Polymer modified, cement based improved adhesive for ceramic and porcelain tiles (C2 class).",
+        description: "Styrenated polyester based 2-component anchoring adhesive.",
         features: [
-            "Very good adhesion",
-            "Excellent workability",
-            "Thixotropic consistency",
-            "No vertical slip",
-            "Non-toxic"
+            "Fast curing",
+            "Non-sag, even overhead",
+            "ETA for anchoring in uncracked concrete",
+            "Low wastage"
         ],
         specSheet: "assets/sika/BuildingFinishing/b3.pdf"
     },
-    "sikaceram-205": {
-        name: "SikaCeram®-205",
-        solution: "Building Finishing",
-        images: ["assets/sika/BuildingFinishing/b4.png"],
-        description: "High performance cementitious flexible tile adhesive (C2TE class) for tropical climates.",
+
+    // Flooring Systems
+    "sikafloor-3-quartztops": {
+        name: "Sikafloor®-3 QuartzTop",
+        solution: "Flooring Systems",
+        images: ["assets/sika/FlooringSystems/f1.png"],
+        description: "One-part, pre-blended, mineral dry-shake hardener with optional colouring for concrete.",
         features: [
-            "Easy to use (just add water)",
-            "Excellent workability",
-            "Good pot life",
-            "Non-toxic",
-            "Flexible formulation"
+            "Medium wear resistance rating",
+            "Good impact resistance",
+            "Cost-effective surface hardener",
+            "Dust-proof",
+            "Fast application",
+            "Easy to clean",
+            "Quality-assured factory blending",
+            "Wide range of colours available"
         ],
-        specSheet: "assets/sika/BuildingFinishing/b4.pdf"
+        specSheet: "assets/sika/FlooringSystems/f1.pdf"
     },
-    "sikaceram-easy-grout": {
-        name: "SikaCeram® Easy Grout",
-        solution: "Building Finishing",
-        images: ["assets/sika/BuildingFinishing/b5.png"],
-        description: "Single-component, semi-flexible grout mortar for ceramic tiles (2-12mm joints).",
+    "esd-flooring": {
+        name: "ESD Flooring",
+        solution: "Flooring Systems",
+        images: ["assets/sika/FlooringSystems/f2.png"],
+        description: "Information about ESD (Electrostatic Discharge) flooring solutions.",
+        features: [],
+        specSheet: "assets/FlooringSystems/f2.pdf"
+    },
+    "sikafloor-263-sl": {
+        name: "Sikafloor®-263 SL",
+        solution: "Flooring Systems",
+        images: ["assets/sika/FlooringSystems/f3.png"],
+        description: "Two part self-smoothing, pigmented, epoxy resin for flooring application. Suitable for use in hot and tropical climatic conditions.",
         features: [
-            "Good adhesion to surfaces",
-            "Water resistant",
-            "Easy to apply",
-            "Abrasion and frost resistant"
+            "Highly fillable",
+            "Good chemical and mechanical resistance",
+            "Easy application",
+            "Liquid proof",
+            "Gloss finish",
+            "Slip resistant surface possible"
         ],
-        specSheet: "assets/sika/BuildingFinishing/b5.pdf"
+        specSheet: "assets/sika/FlooringSystems/f3.pdf"
+    },
+    "sikafloor-purcem-hm-20": {
+        name: "Sikafloor® PurCem® HM-20",
+        solution: "Flooring Systems",
+        images: ["assets/sika/FlooringSystems/f4.png"],
+        description: "High strength-trowel grade, heavy duty polyurethane cement hybrid flooring system. Suitable for floors subject to heavy loading, abrasion and chemical exposure.",
+        features: [
+            "Good resistance to fire",
+            "Steam cleanable at 9 mm thick",
+            "High mechanical and abrasion resistance",
+            "Easy to clean and maintain",
+            "Seamless, non-taint, odourless",
+            "Smooth, matt surface",
+            "Tolerant to moisture in the substrate",
+            "Very good life cycle cost performance",
+            "High chemical resistance",
+            "Easy application"
+        ],
+        specSheet: "assets/sika/FlooringSystems/f4.pdf"
+    },
+    "sika-ucrete-mf": {
+        name: "Sika® Ucrete® MF",
+        solution: "Flooring Systems",
+        images: ["assets/sika/FlooringSystems/f5.png"],
+        description: "4-6mm Heavy duty polyurethane floor finish with exceptional resistance to aggressive chemicals. Provides a smooth protective floor finish suitable for applications in predominantly dry environments.",
+        features: [
+            "Exceptional resistance to aggressive chemicals",
+            "Smooth protective floor finish",
+            "Suitable for food, pharmaceutical and manufacturing industries",
+            "Very low emissions (Indoor Air Comfort Gold Label)",
+            "Resistant to liquid spillage up to 60°C",
+            "Suitable for freezer temperatures down to -18°C",
+            "Non-tainting",
+            "High mechanical strengths and resilient to severe impact loads",
+            "Zero absorption"
+        ],
+        specSheet: "assets/sika/FlooringSystems/f5.pdf"
     },
 
-    // Joint Sealing
-    "sika-sanisil": {
-        name: "Sika® Sanisil®",
-        solution: "Joint Sealing",
-        images: ["assets/sika/JointSealing/j1.png"],
-        description: "1-component, solvent-free sealant with fungus resistance for sanitary applications.",
+    // Sealing and Bonding
+    "sikaflex-construction": {
+        name: "Sikaflex® Construction",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j1.png"],
+        description: "One-component, moisture-curing elastic joint sealant for movement and connection joints on porous substrates.",
         features: [
-            "High elasticity and flexibility",
-            "Mildew resistance",
-            "UV and weathering resistant"
+            "Fast-curing & bubble-free",
+            "Non-sag application",
+            "Overpaintable",
+            "±25% movement capability",
+            "ISO 11600 F 25 HM compliant",
+            "Excellent weather resistance"
         ],
-        specSheet: "assets/sika/RoofingSolutions/j1.pdf"
+        specSheet: "assets/sika/SealingAndBonding/j1.pdf"
+    },
+    "sikaflex-11-fc-purform": {
+        name: "Sikaflex®-11 FC Purform",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j2.png"],
+        description: "Multipurpose elastic adhesive and joint sealant with very low monomer content (<0.1%) for interior/exterior use.",
+        features: [
+            "CE marked to EN 15651",
+            "LEED v4 compliant",
+            "Class A+ VOC emissions",
+            "Bonds concrete/masonry/metal",
+            "±25% movement capability",
+            "No diisocyanate training required"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j2.pdf"
+    },
+    "sikaflex-pro-3-purform": {
+        name: "Sikaflex® PRO-3 Purform®",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j3.png"],
+        description: "Tamper-resistant polyurethane sealant for floor joints and civil engineering with ±25-50% movement capability.",
+        features: [
+            "Anti-pick/vandal-resistant",
+            "ASTM C719 Class 50",
+            "Chemical/weather resistant",
+            "Bubble-free curing",
+            "Food industry approved",
+            "<0.1% monomer content"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j3.pdf"
+    },
+    "sikaflex-tank-n": {
+        name: "Sikaflex® Tank N",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j4.png"],
+        description: "Chemical-resistant elastic sealant for joints exposed to fuels, oils, and water-polluting liquids.",
+        features: [
+            "ETA-09/0272 approved",
+            "Resists petrol/diesel/oils",
+            "±25% movement capability",
+            "LEED v3 compliant",
+            "High mechanical resistance",
+            "For professional use only"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j4.pdf"
+    },
+    "sika-boom": {
+        name: "Sika Boom®",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j5.png"],
+        description: "One-component polyurethane expanding foam for sealing gaps, cracks, and penetrations.",
+        features: [
+            "Expands 2-3x original size",
+            "Tack-free in 5 minutes",
+            "Sandable/paintable",
+            "ASTM E84 fire rated",
+            "Adheres to most materials",
+            "-29°C to +93°C service range"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j5.pdf"
+    },
+    "sika-primer-3n": {
+        name: "Sika® Primer-3 N",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j6.png"],
+        description: "Solvent-based primer for Sikaflex®, SikaHyflex®, and Sikasil® products on porous substrates.",
+        features: [
+            "Short flash-off time (<30 min)",
+            "LEED® EQc 4.1 compliant",
+            "VOC content <700 g/l",
+            "Water repellent",
+            "For concrete/GRC/metal",
+            "Easy brush/roller application"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j6.pdf"
+    },
+    "sikaflex-406-kc": {
+        name: "Sikaflex®-406 KC",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j7.png"],
+        description: "Self-leveling polyurethane sealant with booster accelerator for high-traffic joints.",
+        features: [
+            "±25% movement capability",
+            "Traffic-ready in 3 hours",
+            "Resists diesel/jet fuel",
+            "CE marked to EN 15651-4",
+            "i-Cure® booster technology",
+            "For recessed/broadcast joints"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j7.pdf"
+    },
+    "sika-firestop": {
+        name: "Sika® FireStop",
+        solution: "Sealing and Bonding",
+        images: ["assets/sika/SealingAndBonding/j8.png"],
+        description: "Intumescent inorganic silicate sealant for fire-rated joints and penetrations.",
+        features: [
+            "Withstands +1000°C",
+            "BS 476 Part 4 compliant",
+            "Expands at +250°C",
+            "Non-combustible",
+            "Fume-free in fire",
+            "Shore D 50 hardness"
+        ],
+        specSheet: "assets/sika/SealingAndBonding/j8.pdf"
     }
- }
+}
 },
     kingspan: {
         name: "Kingspan",
@@ -3415,39 +3749,482 @@ sealingAndBonding: {
         logo: "https://www.aco.com/fileadmin/template/images/aco-logo.svg",
         solutions: {
             drainage: {
-                name: "Drainage Systems",
-                description: "Comprehensive drainage solutions for all applications",
-                products: {
-                    "aco-drain": {
-                        name: "ACO Drain",
-                        images: [
-                            "https://www.aco.com/fileadmin/_processed_/6/7/csm_aco-drain_1e8b0c1f1c.png"
-                        ],
-                        description: "Channel drainage system for surface water management.",
-                        features: [
-                            "High load capacity",
-                            "Modular design",
-                            "Easy installation",
-                            "Durable materials"
-                        ],
-                        specSheet: "pdf/aco-drain-spec-sheet.pdf" // Added PDF spec sheet
-                    },
-                    "aco-heeldrain": {
-                        name: "ACO HeelDrain",
-                        images: [
-                            "https://www.aco.com/fileadmin/_processed_/8/0/csm_aco-heeldrain_5a5a5a5a5a.png"
-                        ],
-                        description: "Linear drainage system for building perimeters.",
-                        features: [
-                            "Protects building foundations",
-                            "Easy to integrate",
-                            "High flow capacity",
-                            "Durable construction"
-                        ],
-                        specSheet: "pdf/aco-heeldrain-spec-sheet.pdf" // Added PDF spec sheet
-                    }
-                }
-            },
+    name: "Drainage Systems",
+    description: "Comprehensive drainage solutions for all applications",
+    products: {
+        "aco-pool-perimeter-channel": {
+            name: "ACO Pool Perimeter Channel",
+            images: [
+                "assets/ACO/BuildingDrainage/bu1.png"
+            ],
+            description: "Discreet and aesthetic drainage design for pool perimeters, with welded stainless steel body.",
+            features: [
+                "Discreet / aesthetic drainage design",
+                "Welded stainless steel body, no risk of leakage",
+                "Low construction height suitable for renovation",
+                "Custom made sizes, horizontal outlets and corner sections available",
+                "Channel with or without levelling feet",
+                "Technical design assistance available"
+            ],
+            applications: [
+                "Dividing pool cleaning areas from surrounding pool areas",
+                "Balcony drainage (also suitable)"
+            ],
+            packaging: "Varies based on custom sizes",
+            color: "Stainless Steel (Grade 316 or 304)",
+            specSheet: "assets/ACO/BuildingDrainage/bu1.pdf"
+        },
+        "aco-showerdrain-linear": {
+            name: "ACO ShowerDrain Linear",
+            images: [
+                "assets/ACO/BuildingDrainage/bu2.png"
+            ],
+            description: "Borderless drainage solutions for showers, offering modern stainless steel and glass covers, and tileable options.",
+            features: [
+                "Inspiration for creative bathroom design",
+                "Oversize products available",
+                "Modern stainless steel and glass covers",
+                "Tileable covers for seamless integration",
+                "Compound sealing for reliable floor structure protection"
+            ],
+            applications: [
+                "Bathroom drainage",
+                "Larger bathrooms and similar areas (can be combined with point drainage)"
+            ],
+            packaging: "Varies by model",
+            color: "Stainless Steel, Glass, Tileable options",
+            specSheet: "assets/ACO/BuildingDrainage/bu2.pdf"
+        },
+        "aco-roof-drainage": {
+            name: "ACO Roof Drainage",
+            images: [
+                "assets/ACO/BuildingDrainage/bu3.png"
+            ],
+            description: "System solutions for flat roofs, parking decks, balconies, facades and terraces, including roof drains and emergency drainage.",
+            features: [
+                "Suitable for flat roofs, parking decks, balconies, facades and terraces",
+                "Internal drainage recommended for gentle slopes",
+                "Requires at least two drains or one drain and a safety overflow",
+                "Thermally insulated options available",
+                "Fire protection options available"
+            ],
+            applications: [
+                "Flat roof drainage",
+                "Parking deck drainage",
+                "Balcony and terrace drainage",
+                "Facade drainage"
+            ],
+            packaging: "Varies by drain type",
+            color: "Not specified",
+            specSheet: "assets/ACO/BuildingDrainage/bu3.pdf"
+        },
+        "aco-parking-deck-gullies": {
+            name: "ACO Parking Deck Gullies",
+            images: [
+                "assets/ACO/BuildingDrainage/bu4.png"
+            ],
+            description: "Parking deck gullies (Passavant) with guaranteed fire protection and 100% UV resistance.",
+            features: [
+                "Guaranteed fire protection (R 30 – R 120)",
+                "No additional fire load (Building material class A1, non-flammable)",
+                "100% UV resistant",
+                "Maintenance-friendly",
+                "Flexibility in sealing (PVC/PE/PP/Bitumen)",
+                "Variable installation with on-site height adjustment"
+            ],
+            applications: [
+                "Drainage for parking decks",
+                "Can be utilised as emergency drainage"
+            ],
+            packaging: "Not specified",
+            color: "Cast Iron with paint coat (transport protection)",
+            specSheet: "assets/ACO/BuildingDrainage/bu4.pdf"
+        },
+        "aco-access-covers": {
+            name: "ACO Access Covers",
+            images: [
+                "assets/ACO/BuildingDrainage/bu5.png"
+            ],
+            description: "Access covers made from high-quality materials like aluminium alloys, stainless steel, galvanized steel, and composites for various interior and exterior areas.",
+            features: [
+                "Certified according to European standards",
+                "High reliability and long life",
+                "Flexible installation in interior or exterior areas",
+                "Easy installation, handling, maintenance, and cleaning",
+                "Wide range of standard types with many options",
+                "Tailor-made production possible"
+            ],
+            applications: [
+                "Access solutions for various interior and exterior areas"
+            ],
+            packaging: "Varies by type and size",
+            color: "Aluminium, Stainless Steel, Galvanized Steel, Composites",
+            specSheet: "assets/ACO/BuildingDrainage/bu5.pdf"
+        },
+        "aco-easyflow-bathroom-gully": {
+            name: "ACO Easyflow Bathroom Gully System",
+            images: [
+                "assets/ACO/BuildingDrainage/bu6.png"
+            ],
+            description: "Bathroom gully system designed to eliminate design risk, reduce installed and life cost, and deliver exceptional finish and performance.",
+            features: [
+                "High-performance materials",
+                "Design experience and project support",
+                "Global manufacturing capacity",
+                "Includes wetroom and shower drainage systems",
+                "Stainless steel Modular Channel system",
+                "Stainless steel EuroGully gully system"
+            ],
+            applications: [
+                "Wetrooms and showers",
+                "General bathroom drainage"
+            ],
+            packaging: "Varies by system components",
+            color: "Stainless Steel, Polymer Composite",
+            specSheet: "assets/ACO/BuildingDrainage/bu6.pdf"
+        },
+        "aco-eg150-eurogullies": {
+            name: "ACO EG150 Eurogullies",
+            images: [
+                "assets/ACO/BuildingDrainage/bu7.png"
+            ],
+            description: "High-performance stainless steel floor gullies for washrooms, wet bathrooms, changing rooms, swimming pools, hotels, apartments, and toilets.",
+            features: [
+                "Manufactured from austenitic 304 grade stainless steel (optional 316)",
+                "Excellent corrosion resistance",
+                "Compact design",
+                "Removable in-line foul air trap",
+                "Choice of vertical or horizontal spigot outlets",
+                "Telescopic height adjustment and full rotational adjustment"
+            ],
+            applications: [
+                "Washrooms",
+                "‘Wet’ bathrooms",
+                "Changing rooms",
+                "Swimming pools",
+                "Hotels, apartments, and toilets"
+            ],
+            packaging: "Not specified",
+            color: "Stainless Steel",
+            specSheet: "assets/ACO/BuildingDrainage/bu7.pdf"
+        },
+        "aco-slot-and-box-channels": {
+            name: "ACO Slot and Box Channels",
+            images: [
+                "assets/ACO/BuildingDrainage/bu8.png"
+            ],
+            description: "ACO slot channel 20 and ACO box channels (125, 200) made from austenitic stainless steel for optimal drainage solutions.",
+            features: [
+                "Highly corrosion resistant",
+                "Non-porous, easy to clean and disinfect",
+                "Aesthetically pleasant",
+                "Resistant to temperature extremes and thermal shock",
+                "100% recyclable material",
+                "Pickle passivation surface treatment for corrosion resistance"
+            ],
+            applications: [
+                "Various drainage applications requiring stainless steel channels"
+            ],
+            packaging: "Varies by channel type and size",
+            color: "Stainless Steel",
+            specSheet: "assets/ACO/BuildingDrainage/bu8.pdf"
+        }
+    }
+},
+foodAndBeverageCommercialKitchens: {
+    name: "Food and Beverage Commercial Kitchens",
+    description: "Hygienic drainage and grease management solutions for commercial kitchens and the food & beverage industry.",
+    products: {
+        "aco-hygienic-drainage": {
+            name: "ACO Hygienic Drainage",
+            images: [
+                "assets/ACO/FoodandBeverageCommercialKitchens/fb1.png"
+            ],
+            description: "Hygienic drainage solutions designed to prevent harmful bacteria contamination in commercial kitchens, meeting EHEDG recommendations.",
+            features: [
+                "Hygienic design to prevent bacteria build-up",
+                "Minimal build-up of food particles and debris",
+                "Safe connection with surrounding floor",
+                "Sleek slope function for full drainability",
+                "Eliminates stagnant odour of waste water"
+            ],
+            applications: [
+                "Commercial kitchens",
+                "Food processing areas"
+            ],
+            packaging: "Not specified",
+            color: "Stainless Steel",
+            specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb1.pdf"
+        },
+        "aco-industrial-hygienic-drainage": {
+            name: "ACO Industrial Hygienic Drainage",
+            images: [
+                "assets/ACO/FoodandBeverageCommercialKitchens/fb2.png"
+            ],
+            description: "Sustainable, integrated hygienic drainage systems for industrial applications in the food and beverage sector, focusing on safety and hygiene.",
+            features: [
+                "Meets stringent hygienic requirements (EN 1672, EN ISO 14159, EHEDG)",
+                "Full drainability with outlet in the lowest position and sleek slopes",
+                "Round internal corners (minimum radius 3mm)",
+                "Hygienic fully welded butt joints",
+                "Sealed joints to prevent soil and bacteria accumulation",
+                "Waterproof edge infill on channel frames"
+            ],
+            applications: [
+                "Food and beverage processing plants",
+                "Industrial kitchens"
+            ],
+            packaging: "Not specified",
+            color: "Stainless Steel",
+            specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb2.pdf"
+        },
+        "aco-drainage-management-food-beverage": {
+            name: "ACO Drainage Management for Food & Beverage",
+            images: [
+                "assets/ACO/FoodandBeverageCommercialKitchens/fb3.png"
+            ],
+            description: "Effective drainage management critical for the hygienic performance of food production facilities, mitigating contamination hazards.",
+            features: [
+                "Helps mitigate hazards from the external environment",
+                "Central to safe and hygienic internal operation",
+                "Reduces risk of microbiological contamination from surface liquids",
+                "Supports proper cleaning to prevent food contamination and spoilage",
+                "Designed to meet and surpass EHEDG recommendations",
+                "Potential to reduce costs on staff, detergents, and downtime"
+            ],
+            applications: [
+                "Food production facilities",
+                "Food processing plants"
+            ],
+            packaging: "Not specified",
+            color: "Stainless Steel",
+            specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb3.pdf"
+        },
+        "aco-drainage-solutions-wine-industry": {
+            name: "ACO Drainage Solutions for the Wine Industry",
+            images: [
+                "assets/ACO/FoodandBeverageCommercialKitchens/fb4.png"
+            ],
+            description: "Drainage solutions tailored for the wine industry, focusing on effective layout, reliable floor-drainage connection, and cleaning performance for safety and hygiene.",
+            features: [
+                "Effective layout and sufficient capacity to prevent flooding",
+                "Reliable floor-drainage connection to withstand dynamic and thermal loading",
+                "Designed for complete and practical cleaning",
+                "Aimed at maintaining high hygienic standards",
+                "Helps manage maintenance costs"
+            ],
+            applications: [
+                "Wineries",
+                "Beverage production environments"
+            ],
+            packaging: "Not specified",
+            color: "Not specified",
+            specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb4.pdf"
+        },
+        "aco-tray-channel": {
+            name: "ACO Tray Channel",
+            images: [
+                "assets/ACO/FoodandBeverageCommercialKitchens/fb5.png"
+            ],
+            description: "ACO tray channels made from austenitic stainless steel, offering high corrosion resistance and a non-porous, easy-to-clean surface.",
+            features: [
+                "Highly corrosion resistant",
+                "Non-porous, easy to clean and disinfect",
+                "Aesthetically pleasing",
+                "Resistant to temperature extremes and thermal shock",
+                "Coefficient of linear expansion similar to concrete",
+                "100% recyclable material",
+                "Pickle passivation surface treatment for enhanced corrosion resistance"
+            ],
+            applications: [
+                "Various drainage applications, particularly where hygienic and corrosion-resistant channels are needed"
+            ],
+            packaging: "Varies by channel type and size",
+            color: "Stainless Steel (Grade 304 or 316L)",
+            specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb5.pdf"
+        }
+    }
+},
+externalDrainage: {
+    name: "External Drainage",
+    description: "Comprehensive external surface water management solutions.",
+    products: {
+        "aco-drain-monoblock-pd": {
+            name: "ACO DRAIN® Monoblock PD",
+            images: [
+                "assets/ACO/ExternalDrainage/ex1.png"
+            ],
+            description: "Monocast channel design (trench body + grating) made of natural or anthracite polymer concrete, Load class D400.",
+            features: [
+                "Monocast design prevents faulting and theft of the grating",
+                "Quick and easy installation due to side structure (anchoring pockets) and monolithic design",
+                "Optional sealing compounds for complete watertightness",
+                "V profile for self-cleaning effect even in small drainage areas"
+            ],
+            applications: [
+                "Intersections of footpaths with roads",
+                "Line drainage systems"
+            ],
+            packaging: "Monoblock design",
+            color: "Natural or anthracite polymer concrete",
+            specSheet: "assets/ACO/ExternalDrainage/ex1.pdf"
+        },
+        "aco-s-range": {
+            name: "ACO S Range",
+            images: [
+                "assets/ACO/ExternalDrainage/ex2.png"
+            ],
+            description: "Heavy duty channel drainage system to Load Class F900, with cast iron edge rail, heavy duty grating and eight bolts per metre.",
+            features: [
+                "Heavy duty channel drainage system up to Load Class F900",
+                "Cast iron edge rail for reinforcement",
+                "Heavy duty grating secured with eight bolts per metre",
+                "Excellent hydraulic performance"
+            ],
+            applications: [
+                "Areas requiring heavy duty drainage"
+            ],
+            packaging: "Channels with internal widths 100mm (S100), 150mm (S150), 200mm (S200), and 300mm (S300)",
+            color: "Not specified",
+            specSheet: "assets/ACO/ExternalDrainage/ex2.pdf"
+        },
+        "aco-brickslot": {
+            name: "ACO Brickslot",
+            images: [
+                "assets/ACO/ExternalDrainage/ex3.png"
+            ],
+            description: "Discreet slot drainage system with a range of gratings for architectural sites, compatible with various ACO DRAIN channels.",
+            features: [
+                "Discreet drainage design",
+                "Available in stainless steel / galvanised steel",
+                "Applications up to load class D400 (depending on channel body)",
+                "Compatible with various ACO DRAIN channel bodies"
+            ],
+            applications: [
+                "Architectural sites requiring discreet drainage"
+            ],
+            packaging: "Varies based on grating and channel",
+            color: "Stainless steel / Galvanised steel",
+            specSheet: "assets/ACO/ExternalDrainage/ex3.pdf"
+        },
+        "aco-self-range": {
+            name: "ACO SELF Range",
+            images: [
+                "assets/ACO/ExternalDrainage/ex4.png"
+            ],
+            description: "Residential drainage solutions designed for the private sector, combining quality performance with high design requirements.",
+            features: [
+                "Designed for the private sector",
+                "Suitable for travel by passenger cars",
+                "Various connection types available (sump unit, polymeric endcap, preform channel)",
+                "Grids with screwless locking solution"
+            ],
+            applications: [
+                "Residential areas",
+                "Driveways"
+            ],
+            packaging: "Basic elements from polymer concrete",
+            color: "Various grating materials and colors available",
+            specSheet: "assets/ACO/ExternalDrainage/ex4.pdf"
+        },
+        "aco-composite-manhole-covers": {
+            name: "ACO Composite Manhole Covers",
+            images: [
+                "assets/ACO/ExternalDrainage/ex5.png"
+            ],
+            description: "Composite manhole covers made from SMC resin, offering a low risk of theft, light weight, and high chemical resistance.",
+            features: [
+                "Low risk of theft",
+                "Available in round and square top sections",
+                "Light, Medium and Heavy load classes (A15 – E600)",
+                "Low maintenance and easy installation",
+                "High chemical and biological resistance",
+                "Lightweight compared to concrete"
+            ],
+            applications: [
+                "Pedestrian walkways and pedal cyclists",
+                "Car parking decks",
+                "Driveways",
+                "Coastal areas",
+                "Footpaths",
+                "Residential areas",
+                "Sewer & Storm water drains"
+            ],
+            packaging: "Various sizes and shapes",
+            color: "Not specified",
+            specSheet: "assets/ACO/ExternalDrainage/ex5.pdf"
+        },
+        "aco-systems-sa-pointdrain": {
+            name: "ACO Systems SA PointDrain Type 25",
+            images: [
+                "assets/ACO/ExternalDrainage/ex6.png"
+            ],
+            description: "Durable point drain solution made from polymer concrete, suitable for pedestrian/light vehicle traffic applications.",
+            features: [
+                "Basin manufactured from polymer concrete",
+                "Several outlet configurations for system flexibility",
+                "Choice of grates for pedestrian or light vehicular traffic",
+                "Outperforms HDPE in compressive strength and resistance to freeze-thaw cycles"
+            ],
+            applications: [
+                "Gardens",
+                "Patios",
+                "Walkways",
+                "Driveways"
+            ],
+            packaging: "Polymer concrete basin",
+            color: "Not specified (grate material varies)",
+            specSheet: "assets/ACO/ExternalDrainage/ex6.pdf"
+        },
+        "aco-point-drainage": {
+            name: "ACO Point Drainage",
+            images: [
+                "assets/ACO/ExternalDrainage/ex7.png"
+            ],
+            description: "ACO DRAIN® point drains, including yard drains and road gullies, made from polymer concrete with cast iron components for various load classes.",
+            features: [
+                "Yard drain with polymer concrete body, cast iron frame and grid",
+                "Road gully Combipoint protects mortar joints from traffic damage",
+                "Boltless locking system (Pointlock)",
+                "One-piece, permanently sealed gully (for some models)",
+                "No mortar joints (for some models)"
+            ],
+            applications: [
+                "Kerbs",
+                "Traffic lanes",
+                "Car parks and industrial surfaces",
+                "School yards",
+                "Pedestrian zones",
+                "Roads, paths, piazzas",
+                "Airports"
+            ],
+            packaging: "Varies by type (yard drain, road gully)",
+            color: "Polymer concrete with cast iron",
+            specSheet: "assets/ACO/ExternalDrainage/ex7.pdf"
+        },
+        "aco-external-drainage-self": {
+            name: "ACO External Drainage Self",
+            images: [
+                "assets/ACO/ExternalDrainage/ex8.png"
+            ],
+            description: "ACO Self® drainage designed for the private sector, combining quality with design, featuring screwless locking grids and polymer concrete channels.",
+            features: [
+                "Designed for the private sector",
+                "Suitable for travel by private cars",
+                "Basic elements from polymer concrete (frost resistant, high strength, smooth surface, V-profile)",
+                "Screwless locking grids for easy installation and removal",
+                "Sf groove for 100% sealed channel"
+            ],
+            applications: [
+                "Around family homes",
+                "Private driveways and gardens"
+            ],
+            packaging: "Polymer concrete channels",
+            color: "Various grating materials (galvanised, stainless steel, cast iron, plastic) with different surface adjustments and painting shades.",
+            specSheet: "assets/ACO/ExternalDrainage/ex8.pdf"
+        }
+    }
+},
             waterManagement: {
                 name: "Water Management",
                 description: "Solutions for sustainable water management",
