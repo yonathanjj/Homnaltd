@@ -4045,6 +4045,109 @@ foodAndBeverageCommercialKitchens: {
         }
     }
 },
+portAndAirportDrainage: {
+    name: "Port and Airport Drainage",
+    description: "Heavy-duty drainage solutions for ports, airports, and other demanding environments.",
+    products: {
+        "aco-drain-powerlock-sk": {
+            name: "ACO DRAIN® Powerlock S 100 K to S 300 K",
+            images: [
+                "assets/ACO/PortandAirportDrainage/po1.png"
+            ],
+            description: "Heavy load channel SK designed for heavy-load areas up to load class F 900, featuring a robust design and liquid-tight connections.",
+            features: [
+                "Load classes up to F 900 (DIN EN 1433)",
+                "Nominal widths: 100, 150, 200, 300",
+                "Material: Polymer concrete with cast frame and cast iron grating",
+                "Slimline design without compromising stability",
+                "Liquid-tight channel trains and connections with ACO safety seam",
+                "Compact and stable with reinforcing and anchoring ribs"
+            ],
+            applications: [
+                "Motorways",
+                "Runways and airfields at airports",
+                "Container handling centres",
+                "Industrial surfaces",
+                "Logistics areas and routes",
+                "Rest stops and service stations"
+            ],
+            packaging: "Channel elements in various heights and with optional integrated bottom gradients.",
+            color: "Polymer concrete with cast iron grating",
+            specSheet: "assets/ACO/PortandAirportDrainage/po1.pdf"
+        },
+        "aco-drain-monoblock-rd-po2": {
+            name: "ACO DRAIN® Monoblock RD",
+            images: [
+                "assets/ACO/PortandAirportDrainage/po2.png"
+            ],
+            description: "Monocast channel design (trench body + grating) made of polymer concrete, with a narrow inflow slot and Drainlock® locking device.",
+            features: [
+                "Monocast channel design (trench body + grating)",
+                "Inspection elements with grating and Drainlock®",
+                "Load class D 400",
+                "Narrow inflow slot (8-15 mm depending on model)",
+                "Monolithic design prevents faulting and theft",
+                "Easy and quick installation"
+            ],
+            applications: [
+                "Intersections of footpaths with roads",
+                "Line drainage systems"
+            ],
+            packaging: "One-piece design made of polymer concrete with grating.",
+            color: "Polymer concrete",
+            specSheet: "assets/ACO/PortandAirportDrainage/po2.pdf"
+        },
+        "aco-drain-monoblock-rd-po3": {
+            name: "ACO DRAIN® Monoblock RD (Duplicate Description)",
+            images: [
+                "assets/ACO/PortandAirportDrainage/po3.png"
+            ],
+            description: "Monocast channel design (trench body + grating) made of polymer concrete, with a narrow inflow slot and Drainlock® locking device. (Description appears to be a duplicate of po2)",
+            features: [
+                "Monocast channel design (trench body + grating)",
+                "Inspection elements with grating and Drainlock®",
+                "Load class D 400",
+                "Narrow inflow slot (8-15 mm depending on model)",
+                "Monolithic design prevents faulting and theft",
+                "Easy and quick installation"
+            ],
+            applications: [
+                "Intersections of footpaths with roads",
+                "Line drainage systems"
+            ],
+            packaging: "One-piece design made of polymer concrete with grating.",
+            color: "Polymer concrete",
+            specSheet: "assets/ACO/PortandAirportDrainage/po3.pdf"
+        },
+        "secant-servokat-sec": {
+            name: "SECANT®/SERVOKAT®-SEC Manhole Covers",
+            images: [
+                "assets/ACO/PortandAirportDrainage/po4.png"
+            ],
+            description: "Manhole cover systems offering flexibility and accessibility for various applications, including options with opening aids.",
+            features: [
+                "Classes B 125, M 125, D 400, SLW 60-25 km/h (SECANT®)",
+                "Classes B 125, M 125, D 400, F 900 with opening aid (SERVOKAT®-SEC)",
+                "Covers and frames can be combined",
+                "Openings remain fully accessible",
+                "Wide field of application (supply/disposal, material shafts, pumping stations, etc.)",
+                "Optional single duct, multiple duct, or beam multiple cover units",
+                "SERVOKAT®-SEC with opening aid for frequent operation"
+            ],
+            applications: [
+                "Energy head offices",
+                "Material shafts in operational premises",
+                "Pumping stations",
+                "Transformer plants",
+                "Control shafts",
+                "Rain water retention basins"
+            ],
+            packaging: "Varies by cover type (single duct, multiple duct, etc.)",
+            color: "In-situ filling possible with various materials (concrete, asphalt, tiles)",
+            specSheet: "assets/ACO/PortandAirportDrainage/po4.pdf"
+        }
+    }
+},
 externalDrainage: {
     name: "External Drainage",
     description: "Comprehensive external surface water management solutions.",
@@ -4225,32 +4328,666 @@ externalDrainage: {
         }
     }
 },
-            waterManagement: {
-                name: "Water Management",
-                description: "Solutions for sustainable water management",
-                products: {
-                    "aco-rain": {
-                        name: "ACO Rain",
-                        images: [
-                            "https://www.aco.com/fileadmin/_processed_/9/1/csm_aco-rain_9a9a9a9a9a.png"
-                        ],
-                        description: "Sustainable drainage system for rainwater management.",
-                        features: [
-                            "Promotes natural drainage",
-                            "Reduces runoff",
-                            "Improves water quality",
-                            "Aesthetically pleasing"
-                        ],
-                        specSheet: "pdf/aco-rain-spec-sheet.pdf" // Added PDF spec sheet
-                    }
-                }
-            }
+            wasteWaterManagementTechnology: {
+    name: "Waste Water Management Technology",
+    description: "Solutions for the pre-treatment of wastewater.",
+    products: {
+        "aco-grease-separators": {
+            name: "ACO Grease Separators",
+            images: [
+                "assets/ACO/WasteWaterManagementTechnology/was1.png"
+            ],
+            description: "Grease separators for the catering industry, hotel trade, and food production to pre-treat fatty wastewater and protect drainage systems.",
+            features: [
+                "Prevents pipes from becoming greasy",
+                "Ensures operational safety of the kitchen drainage",
+                "Mandatory in industrial and commercial environments with grease-polluted wastewater",
+                "Manufactured and tested according to DIN EN 1124 (ACO PIPE system components)",
+                "Optional corrosion-resistant materials: stainless steel 1.4301 or 1.4571"
+            ],
+            applications: [
+                "Commercial kitchens",
+                "Catering industry",
+                "Hotel trade",
+                "Food production facilities"
+            ],
+            packaging: "Varies by separator size and type",
+            color: "Stainless Steel (optional)",
+            specSheet: "assets/ACO/WasteWaterManagementTechnology/was1.pdf"
         },
-        allProducts: {
-            // All ACO products would be listed here in a flattened structure
-            // Each should include the specSheet property
+        "aco-light-oil-separators-coalisator-p": {
+            name: "ACO Light Oil Separators Coalisator-P",
+            images: [
+                "assets/ACO/WasteWaterManagementTechnology/was2.png"
+            ],
+            description: "Separator systems for light oil, utilizing coalescence material, for use behind drainage points where mineral or light oils are present.",
+            features: [
+                "Essential where flammable oils or explosive atmospheres can develop",
+                "Uses gravity separation and coalescence to remove light liquids",
+                "Features automatic closing devices to prevent isolated light oils from reaching the drain (EN 858-2)",
+                "Coalescence material aids in the bonding of small oil droplets"
+            ],
+            applications: [
+                "Gas stations",
+                "Parking areas, parking lots, roadways",
+                "Washing areas, car wash facilities",
+                "Workshops, vehicle recovery, scrap yards",
+                "Transformer stations"
+            ],
+            packaging: "Varies by separator size and capacity",
+            color: "Not specified",
+            specSheet: "assets/ACO/WasteWaterManagementTechnology/was2.pdf"
+        },
+        "aco-grease-and-light-liquid-separators": {
+            name: "ACO Grease and Light Liquid Separators (Below Ground)",
+            images: [
+                "assets/ACO/WasteWaterManagementTechnology/was3.png"
+            ],
+            description: "ACO grease and light liquid separators for below-ground installation, ensuring solids and liquids that can cause harm are held back from sewage pipes.",
+            features: [
+                "Manufactured in accordance with EN 1825 (Grease) and EN 858 (Light Liquid)",
+                "Hydraulically tested",
+                "General Building Supervisory Authority Authorisation and/or DIBT Berlin approval",
+                "Product stability guaranteed for 50 years (certified statics)",
+                "Protection against upwelling and maximum groundwater level"
+            ],
+            applications: [
+                "Commercial operations generating wastewater",
+                "Below ground installation where pre-treatment is required"
+            ],
+            packaging: "Below ground installation units",
+            color: "Not specified",
+            specSheet: "assets/ACO/WasteWaterManagementTechnology/was3.pdf"
         }
     }
+}
+        },
+        allProducts: {
+    // Drainage Systems Products
+    "ACO Pool Perimeter Channel": {
+        name: "ACO Pool Perimeter Channel",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu1.png"],
+        description: "Discreet and aesthetic drainage design for pool perimeters, with welded stainless steel body.",
+        features: [
+            "Discreet / aesthetic drainage design",
+            "Welded stainless steel body, no risk of leakage",
+            "Low construction height suitable for renovation",
+            "Custom made sizes, horizontal outlets and corner sections available",
+            "Channel with or without levelling feet",
+            "Technical design assistance available"
+        ],
+        applications: [
+            "Dividing pool cleaning areas from surrounding pool areas",
+            "Balcony drainage (also suitable)"
+        ],
+        packaging: "Varies based on custom sizes",
+        color: "Stainless Steel (Grade 316 or 304)",
+        specSheet: "assets/ACO/BuildingDrainage/bu1.pdf"
+    },
+    "ACO ShowerDrain Linear": {
+        name: "ACO ShowerDrain Linear",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu2.png"],
+        description: "Borderless drainage solutions for showers, offering modern stainless steel and glass covers, and tileable options.",
+        features: [
+            "Inspiration for creative bathroom design",
+            "Oversize products available",
+            "Modern stainless steel and glass covers",
+            "Tileable covers for seamless integration",
+            "Compound sealing for reliable floor structure protection"
+        ],
+        applications: [
+            "Bathroom drainage",
+            "Larger bathrooms and similar areas (can be combined with point drainage)"
+        ],
+        packaging: "Varies by model",
+        color: "Stainless Steel, Glass, Tileable options",
+        specSheet: "assets/ACO/BuildingDrainage/bu2.pdf"
+    },
+    "ACO Roof Drainage": {
+        name: "ACO Roof Drainage",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu3.png"],
+        description: "System solutions for flat roofs, parking decks, balconies, facades and terraces, including roof drains and emergency drainage.",
+        features: [
+            "Suitable for flat roofs, parking decks, balconies, facades and terraces",
+            "Internal drainage recommended for gentle slopes",
+            "Requires at least two drains or one drain and a safety overflow",
+            "Thermally insulated options available",
+            "Fire protection options available"
+        ],
+        applications: [
+            "Flat roof drainage",
+            "Parking deck drainage",
+            "Balcony and terrace drainage",
+            "Facade drainage"
+        ],
+        packaging: "Varies by drain type",
+        color: "Not specified",
+        specSheet: "assets/ACO/BuildingDrainage/bu3.pdf"
+    },
+    "ACO Parking Deck Gullies": {
+        name: "ACO Parking Deck Gullies",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu4.png"],
+        description: "Parking deck gullies (Passavant) with guaranteed fire protection and 100% UV resistance.",
+        features: [
+            "Guaranteed fire protection (R 30 – R 120)",
+            "No additional fire load (Building material class A1, non-flammable)",
+            "100% UV resistant",
+            "Maintenance-friendly",
+            "Flexibility in sealing (PVC/PE/PP/Bitumen)",
+            "Variable installation with on-site height adjustment"
+        ],
+        applications: [
+            "Drainage for parking decks",
+            "Can be utilised as emergency drainage"
+        ],
+        packaging: "Not specified",
+        color: "Cast Iron with paint coat (transport protection)",
+        specSheet: "assets/ACO/BuildingDrainage/bu4.pdf"
+    },
+    "ACO Access Covers": {
+        name: "ACO Access Covers",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu5.png"],
+        description: "Access covers made from high-quality materials like aluminium alloys, stainless steel, galvanized steel, and composites for various interior and exterior areas.",
+        features: [
+            "Certified according to European standards",
+            "High reliability and long life",
+            "Flexible installation in interior or exterior areas",
+            "Easy installation, handling, maintenance, and cleaning",
+            "Wide range of standard types with many options",
+            "Tailor-made production possible"
+        ],
+        applications: [
+            "Access solutions for various interior and exterior areas"
+        ],
+        packaging: "Varies by type and size",
+        color: "Aluminium, Stainless Steel, Galvanized Steel, Composites",
+        specSheet: "assets/ACO/BuildingDrainage/bu5.pdf"
+    },
+    "ACO Easyflow Bathroom Gully System": {
+        name: "ACO Easyflow Bathroom Gully System",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu6.png"],
+        description: "Bathroom gully system designed to eliminate design risk, reduce installed and life cost, and deliver exceptional finish and performance.",
+        features: [
+            "High-performance materials",
+            "Design experience and project support",
+            "Global manufacturing capacity",
+            "Includes wetroom and shower drainage systems",
+            "Stainless steel Modular Channel system",
+            "Stainless steel EuroGully gully system"
+        ],
+        applications: [
+            "Wetrooms and showers",
+            "General bathroom drainage"
+        ],
+        packaging: "Varies by system components",
+        color: "Stainless Steel, Polymer Composite",
+        specSheet: "assets/ACO/BuildingDrainage/bu6.pdf"
+    },
+    "ACO EG150 Eurogullies": {
+        name: "ACO EG150 Eurogullies",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu7.png"],
+        description: "High-performance stainless steel floor gullies for washrooms, wet bathrooms, changing rooms, swimming pools, hotels, apartments, and toilets.",
+        features: [
+            "Manufactured from austenitic 304 grade stainless steel (optional 316)",
+            "Excellent corrosion resistance",
+            "Compact design",
+            "Removable in-line foul air trap",
+            "Choice of vertical or horizontal spigot outlets",
+            "Telescopic height adjustment and full rotational adjustment"
+        ],
+        applications: [
+            "Washrooms",
+            "Wet bathrooms",
+            "Changing rooms",
+            "Swimming pools",
+            "Hotels, apartments, and toilets"
+        ],
+        packaging: "Not specified",
+        color: "Stainless Steel",
+        specSheet: "assets/ACO/BuildingDrainage/bu7.pdf"
+    },
+    "ACO Slot and Box Channels": {
+        name: "ACO Slot and Box Channels",
+        solution: "Drainage Systems",
+        images: ["assets/ACO/BuildingDrainage/bu8.png"],
+        description: "ACO slot channel 20 and ACO box channels (125, 200) made from austenitic stainless steel for optimal drainage solutions.",
+        features: [
+            "Highly corrosion resistant",
+            "Non-porous, easy to clean and disinfect",
+            "Aesthetically pleasant",
+            "Resistant to temperature extremes and thermal shock",
+            "100% recyclable material",
+            "Pickle passivation surface treatment for corrosion resistance"
+        ],
+        applications: [
+            "Various drainage applications requiring stainless steel channels"
+        ],
+        packaging: "Varies by channel type and size",
+        color: "Stainless Steel",
+        specSheet: "assets/ACO/BuildingDrainage/bu8.pdf"
+    },
+
+    // Food and Beverage Commercial Kitchens Products
+    "ACO Hygienic Drainage": {
+        name: "ACO Hygienic Drainage",
+        solution: "Food and Beverage Commercial Kitchens",
+        images: ["assets/ACO/FoodandBeverageCommercialKitchens/fb1.png"],
+        description: "Hygienic drainage solutions designed to prevent harmful bacteria contamination in commercial kitchens, meeting EHEDG recommendations.",
+        features: [
+            "Hygienic design to prevent bacteria build-up",
+            "Minimal build-up of food particles and debris",
+            "Safe connection with surrounding floor",
+            "Sleek slope function for full drainability",
+            "Eliminates stagnant odour of waste water"
+        ],
+        applications: [
+            "Commercial kitchens",
+            "Food processing areas"
+        ],
+        packaging: "Not specified",
+        color: "Stainless Steel",
+        specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb1.pdf"
+    },
+    "ACO Industrial Hygienic Drainage": {
+        name: "ACO Industrial Hygienic Drainage",
+        solution: "Food and Beverage Commercial Kitchens",
+        images: ["assets/ACO/FoodandBeverageCommercialKitchens/fb2.png"],
+        description: "Sustainable, integrated hygienic drainage systems for industrial applications in the food and beverage sector, focusing on safety and hygiene.",
+        features: [
+            "Meets stringent hygienic requirements (EN 1672, EN ISO 14159, EHEDG)",
+            "Full drainability with outlet in the lowest position and sleek slopes",
+            "Round internal corners (minimum radius 3mm)",
+            "Hygienic fully welded butt joints",
+            "Sealed joints to prevent soil and bacteria accumulation",
+            "Waterproof edge infill on channel frames"
+        ],
+        applications: [
+            "Food and beverage processing plants",
+            "Industrial kitchens"
+        ],
+        packaging: "Not specified",
+        color: "Stainless Steel",
+        specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb2.pdf"
+    },
+    "ACO Drainage Management for Food & Beverage": {
+        name: "ACO Drainage Management for Food & Beverage",
+        solution: "Food and Beverage Commercial Kitchens",
+        images: ["assets/ACO/FoodandBeverageCommercialKitchens/fb3.png"],
+        description: "Effective drainage management critical for the hygienic performance of food production facilities, mitigating contamination hazards.",
+        features: [
+            "Helps mitigate hazards from the external environment",
+            "Central to safe and hygienic internal operation",
+            "Reduces risk of microbiological contamination from surface liquids",
+            "Supports proper cleaning to prevent food contamination and spoilage",
+            "Designed to meet and surpass EHEDG recommendations",
+            "Potential to reduce costs on staff, detergents, and downtime"
+        ],
+        applications: [
+            "Food production facilities",
+            "Food processing plants"
+        ],
+        packaging: "Not specified",
+        color: "Stainless Steel",
+        specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb3.pdf"
+    },
+    "ACO Drainage Solutions for the Wine Industry": {
+        name: "ACO Drainage Solutions for the Wine Industry",
+        solution: "Food and Beverage Commercial Kitchens",
+        images: ["assets/ACO/FoodandBeverageCommercialKitchens/fb4.png"],
+        description: "Drainage solutions tailored for the wine industry, focusing on effective layout, reliable floor-drainage connection, and cleaning performance for safety and hygiene.",
+        features: [
+            "Effective layout and sufficient capacity to prevent flooding",
+            "Reliable floor-drainage connection to withstand dynamic and thermal loading",
+            "Designed for complete and practical cleaning",
+            "Aimed at maintaining high hygienic standards",
+            "Helps manage maintenance costs"
+        ],
+        applications: [
+            "Wineries",
+            "Beverage production environments"
+        ],
+        packaging: "Not specified",
+        color: "Not specified",
+        specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb4.pdf"
+    },
+    "ACO Tray Channel": {
+        name: "ACO Tray Channel",
+        solution: "Food and Beverage Commercial Kitchens",
+        images: ["assets/ACO/FoodandBeverageCommercialKitchens/fb5.png"],
+        description: "ACO tray channels made from austenitic stainless steel, offering high corrosion resistance and a non-porous, easy-to-clean surface.",
+        features: [
+            "Highly corrosion resistant",
+            "Non-porous, easy to clean and disinfect",
+            "Aesthetically pleasing",
+            "Resistant to temperature extremes and thermal shock",
+            "Coefficient of linear expansion similar to concrete",
+            "100% recyclable material",
+            "Pickle passivation surface treatment for enhanced corrosion resistance"
+        ],
+        applications: [
+            "Various drainage applications, particularly where hygienic and corrosion-resistant channels are needed"
+        ],
+        packaging: "Varies by channel type and size",
+        color: "Stainless Steel (Grade 304 or 316L)",
+        specSheet: "assets/ACO/FoodandBeverageCommercialKitchens/fb5.pdf"
+    },
+
+    // Port and Airport Drainage Products
+    "ACO DRAIN® Powerlock S 100 K to S 300 K": {
+        name: "ACO DRAIN® Powerlock S 100 K to S 300 K",
+        solution: "Port and Airport Drainage",
+        images: ["assets/ACO/PortandAirportDrainage/po1.png"],
+        description: "Heavy load channel SK designed for heavy-load areas up to load class F 900, featuring a robust design and liquid-tight connections.",
+        features: [
+            "Load classes up to F 900 (DIN EN 1433)",
+            "Nominal widths: 100, 150, 200, 300",
+            "Material: Polymer concrete with cast frame and cast iron grating",
+            "Slimline design without compromising stability",
+            "Liquid-tight channel trains and connections with ACO safety seam",
+            "Compact and stable with reinforcing and anchoring ribs"
+        ],
+        applications: [
+            "Motorways",
+            "Runways and airfields at airports",
+            "Container handling centres",
+            "Industrial surfaces",
+            "Logistics areas and routes",
+            "Rest stops and service stations"
+        ],
+        packaging: "Channel elements in various heights and with optional integrated bottom gradients.",
+        color: "Polymer concrete with cast iron grating",
+        specSheet: "assets/ACO/PortandAirportDrainage/po1.pdf"
+    },
+    "ACO DRAIN® Monoblock RD": {
+        name: "ACO DRAIN® Monoblock RD",
+        solution: "Port and Airport Drainage",
+        images: ["assets/ACO/PortandAirportDrainage/po2.png"],
+        description: "Monocast channel design (trench body + grating) made of polymer concrete, with a narrow inflow slot and Drainlock® locking device.",
+        features: [
+            "Monocast channel design (trench body + grating)",
+            "Inspection elements with grating and Drainlock®",
+            "Load class D 400",
+            "Narrow inflow slot (8-15 mm depending on model)",
+            "Monolithic design prevents faulting and theft",
+            "Easy and quick installation"
+        ],
+        applications: [
+            "Intersections of footpaths with roads",
+            "Line drainage systems"
+        ],
+        packaging: "One-piece design made of polymer concrete with grating.",
+        color: "Polymer concrete",
+        specSheet: "assets/ACO/PortandAirportDrainage/po2.pdf"
+    },
+    "SECANT®/SERVOKAT®-SEC Manhole Covers": {
+        name: "SECANT®/SERVOKAT®-SEC Manhole Covers",
+        solution: "Port and Airport Drainage",
+        images: ["assets/ACO/PortandAirportDrainage/po4.png"],
+        description: "Manhole cover systems offering flexibility and accessibility for various applications, including options with opening aids.",
+        features: [
+            "Classes B 125, M 125, D 400, SLW 60-25 km/h (SECANT®)",
+            "Classes B 125, M 125, D 400, F 900 with opening aid (SERVOKAT®-SEC)",
+            "Covers and frames can be combined",
+            "Openings remain fully accessible",
+            "Wide field of application (supply/disposal, material shafts, pumping stations, etc.)",
+            "Optional single duct, multiple duct, or beam multiple cover units",
+            "SERVOKAT®-SEC with opening aid for frequent operation"
+        ],
+        applications: [
+            "Energy head offices",
+            "Material shafts in operational premises",
+            "Pumping stations",
+            "Transformer plants",
+            "Control shafts",
+            "Rain water retention basins"
+        ],
+        packaging: "Varies by cover type (single duct, multiple duct, etc.)",
+        color: "In-situ filling possible with various materials (concrete, asphalt, tiles)",
+        specSheet: "assets/ACO/PortandAirportDrainage/po4.pdf"
+    },
+
+    // External Drainage Products
+    "ACO DRAIN® Monoblock PD": {
+        name: "ACO DRAIN® Monoblock PD",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex1.png"],
+        description: "Monocast channel design (trench body + grating) made of natural or anthracite polymer concrete, Load class D400.",
+        features: [
+            "Monocast design prevents faulting and theft of the grating",
+            "Quick and easy installation due to side structure (anchoring pockets) and monolithic design",
+            "Optional sealing compounds for complete watertightness",
+            "V profile for self-cleaning effect even in small drainage areas"
+        ],
+        applications: [
+            "Intersections of footpaths with roads",
+            "Line drainage systems"
+        ],
+        packaging: "Monoblock design",
+        color: "Natural or anthracite polymer concrete",
+        specSheet: "assets/ACO/ExternalDrainage/ex1.pdf"
+    },
+    "ACO S Range": {
+        name: "ACO S Range",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex2.png"],
+        description: "Heavy duty channel drainage system to Load Class F900, with cast iron edge rail, heavy duty grating and eight bolts per metre.",
+        features: [
+            "Heavy duty channel drainage system up to Load Class F900",
+            "Cast iron edge rail for reinforcement",
+            "Heavy duty grating secured with eight bolts per metre",
+            "Excellent hydraulic performance"
+        ],
+        applications: [
+            "Areas requiring heavy duty drainage"
+        ],
+        packaging: "Channels with internal widths 100mm (S100), 150mm (S150), 200mm (S200), and 300mm (S300)",
+        color: "Not specified",
+        specSheet: "assets/ACO/ExternalDrainage/ex2.pdf"
+    },
+    "ACO Brickslot": {
+        name: "ACO Brickslot",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex3.png"],
+        description: "Discreet slot drainage system with a range of gratings for architectural sites, compatible with various ACO DRAIN channels.",
+        features: [
+            "Discreet drainage design",
+            "Available in stainless steel / galvanised steel",
+            "Applications up to load class D400 (depending on channel body)",
+            "Compatible with various ACO DRAIN channel bodies"
+        ],
+        applications: [
+            "Architectural sites requiring discreet drainage"
+        ],
+        packaging: "Varies based on grating and channel",
+        color: "Stainless steel / Galvanised steel",
+        specSheet: "assets/ACO/ExternalDrainage/ex3.pdf"
+    },
+    "ACO SELF Range": {
+        name: "ACO SELF Range",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex4.png"],
+        description: "Residential drainage solutions designed for the private sector, combining quality performance with high design requirements.",
+        features: [
+            "Designed for the private sector",
+            "Suitable for travel by passenger cars",
+            "Various connection types available (sump unit, polymeric endcap, preform channel)",
+            "Grids with screwless locking solution"
+        ],
+        applications: [
+            "Residential areas",
+            "Driveways"
+        ],
+        packaging: "Basic elements from polymer concrete",
+        color: "Various grating materials and colors available",
+        specSheet: "assets/ACO/ExternalDrainage/ex4.pdf"
+    },
+    "ACO Composite Manhole Covers": {
+        name: "ACO Composite Manhole Covers",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex5.png"],
+        description: "Composite manhole covers made from SMC resin, offering a low risk of theft, light weight, and high chemical resistance.",
+        features: [
+            "Low risk of theft",
+            "Available in round and square top sections",
+            "Light, Medium and Heavy load classes (A15 – E600)",
+            "Low maintenance and easy installation",
+            "High chemical and biological resistance",
+            "Lightweight compared to concrete"
+        ],
+        applications: [
+            "Pedestrian walkways and pedal cyclists",
+            "Car parking decks",
+            "Driveways",
+            "Coastal areas",
+            "Footpaths",
+            "Residential areas",
+            "Sewer & Storm water drains"
+        ],
+        packaging: "Various sizes and shapes",
+        color: "Not specified",
+        specSheet: "assets/ACO/ExternalDrainage/ex5.pdf"
+    },
+    "ACO Systems SA PointDrain Type 25": {
+        name: "ACO Systems SA PointDrain Type 25",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex6.png"],
+        description: "Durable point drain solution made from polymer concrete, suitable for pedestrian/light vehicle traffic applications.",
+        features: [
+            "Basin manufactured from polymer concrete",
+            "Several outlet configurations for system flexibility",
+            "Choice of grates for pedestrian or light vehicular traffic",
+            "Outperforms HDPE in compressive strength and resistance to freeze-thaw cycles"
+        ],
+        applications: [
+            "Gardens",
+            "Patios",
+            "Walkways",
+            "Driveways"
+        ],
+        packaging: "Polymer concrete basin",
+        color: "Not specified (grate material varies)",
+        specSheet: "assets/ACO/ExternalDrainage/ex6.pdf"
+    },
+    "ACO Point Drainage": {
+        name: "ACO Point Drainage",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex7.png"],
+        description: "ACO DRAIN® point drains, including yard drains and road gullies, made from polymer concrete with cast iron components for various load classes.",
+        features: [
+            "Yard drain with polymer concrete body, cast iron frame and grid",
+            "Road gully Combipoint protects mortar joints from traffic damage",
+            "Boltless locking system (Pointlock)",
+            "One-piece, permanently sealed gully (for some models)",
+            "No mortar joints (for some models)"
+        ],
+        applications: [
+            "Kerbs",
+            "Traffic lanes",
+            "Car parks and industrial surfaces",
+            "School yards",
+            "Pedestrian zones",
+            "Roads, paths, piazzas",
+            "Airports"
+        ],
+        packaging: "Varies by type (yard drain, road gully)",
+        color: "Polymer concrete with cast iron",
+        specSheet: "assets/ACO/ExternalDrainage/ex7.pdf"
+    },
+    "ACO External Drainage Self": {
+        name: "ACO External Drainage Self",
+        solution: "External Drainage",
+        images: ["assets/ACO/ExternalDrainage/ex8.png"],
+        description: "ACO Self® drainage designed for the private sector, combining quality with design, featuring screwless locking grids and polymer concrete channels.",
+        features: [
+            "Designed for the private sector",
+            "Suitable for travel by private cars",
+            "Basic elements from polymer concrete (frost resistant, high strength, smooth surface, V-profile)",
+            "Screwless locking grids for easy installation and removal",
+            "Sf groove for 100% sealed channel"
+        ],
+        applications: [
+            "Around family homes",
+            "Private driveways and gardens"
+        ],
+        packaging: "Polymer concrete channels",
+        color: "Various grating materials (galvanised, stainless steel, cast iron, plastic) with different surface adjustments and painting shades.",
+        specSheet: "assets/ACO/ExternalDrainage/ex8.pdf"
+    },
+
+    // Waste Water Management Technology Products
+    "ACO Grease Separators": {
+        name: "ACO Grease Separators",
+        solution: "Waste Water Management Technology",
+        images: ["assets/ACO/WasteWaterManagementTechnology/was1.png"],
+        description: "Grease separators for the catering industry, hotel trade, and food production to pre-treat fatty wastewater and protect drainage systems.",
+        features: [
+            "Prevents pipes from becoming greasy",
+            "Ensures operational safety of the kitchen drainage",
+            "Mandatory in industrial and commercial environments with grease-polluted wastewater",
+            "Manufactured and tested according to DIN EN 1124 (ACO PIPE system components)",
+            "Optional corrosion-resistant materials: stainless steel 1.4301 or 1.4571"
+        ],
+        applications: [
+            "Commercial kitchens",
+            "Catering industry",
+            "Hotel trade",
+            "Food production facilities"
+        ],
+        packaging: "Varies by separator size and type",
+        color: "Stainless Steel (optional)",
+        specSheet: "assets/ACO/WasteWaterManagementTechnology/was1.pdf"
+    },
+    "ACO Light Oil Separators Coalisator-P": {
+        name: "ACO Light Oil Separators Coalisator-P",
+        solution: "Waste Water Management Technology",
+        images: ["assets/ACO/WasteWaterManagementTechnology/was2.png"],
+        description: "Separator systems for light oil, utilizing coalescence material, for use behind drainage points where mineral or light oils are present.",
+        features: [
+            "Essential where flammable oils or explosive atmospheres can develop",
+            "Uses gravity separation and coalescence to remove light liquids",
+            "Features automatic closing devices to prevent isolated light oils from reaching the drain (EN 858-2)",
+            "Coalescence material aids in the bonding of small oil droplets"
+        ],
+        applications: [
+            "Gas stations",
+            "Parking areas, parking lots, roadways",
+            "Washing areas, car wash facilities",
+            "Workshops, vehicle recovery, scrap yards",
+            "Transformer stations"
+        ],
+        packaging: "Varies by separator size and capacity",
+        color: "Not specified",
+        specSheet: "assets/ACO/WasteWaterManagementTechnology/was2.pdf"
+    },
+    "ACO Grease and Light Liquid Separators (Below Ground)": {
+        name: "ACO Grease and Light Liquid Separators (Below Ground)",
+        solution: "Waste Water Management Technology",
+        images: ["assets/ACO/WasteWaterManagementTechnology/was3.png"],
+        description: "ACO grease and light liquid separators for below-ground installation, ensuring solids and liquids that can cause harm are held back from sewage pipes.",
+        features: [
+            "Manufactured in accordance with EN 1825 (Grease) and EN 858 (Light Liquid)",
+            "Hydraulically tested",
+            "General Building Supervisory Authority Authorisation and/or DIBT Berlin approval",
+            "Product stability guaranteed for 50 years (certified statics)",
+            "Protection against upwelling and maximum groundwater level"
+        ],
+        applications: [
+            "Commercial operations generating wastewater",
+            "Below ground installation where pre-treatment is required"
+        ],
+        packaging: "Below ground installation units",
+        color: "Not specified",
+        specSheet: "assets/ACO/WasteWaterManagementTechnology/was3.pdf"
+    }
+}
+}
 };
 
 // DOM Ready
